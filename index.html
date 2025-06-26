@@ -5,121 +5,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arterius</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="container header-container">
             <div class="logo">
-                <img src="logo.png" alt="Arterius Logo" width="200" height="50">
-                <span>медичний центр</span>
+                <svg class="header-logo-svg">
+                    <use href="" alt="Arterius Logo" width="120" height="20">
+                    </use>
+                </svg>
+                <span class="header-logo-span">медичний центр</span>
             </div>
-            <address class="contact">
-                <div class="header-tel">
-                    <a href="tel:+380975004214">
-                        <img src="phone-icon.png" alt="Phone Icon" width="20" height="20">
-                        <p>гаряча лінія </p>
-                        (097) 500-42-14
-                    </a>
+            <address>
+                <ul class="contact">
+                    <li class="header-item">
+                        <svg class="header-item-svg">
+                            <use href="" alt="Arterius Logo" width="20" height="20">
+                            </use>
+                        </svg>
+                        <span class="header-tel-span">гаряча лінія </span>
+                        <a class="header-tel-link" href="tel:+380975004214">(097) 500-42-14</a>
 
-                </div>
-                <div class="header-schedule">
-                    <img src="schedule-icon.png" alt="Schedule Icon" width="20" height="20">
-                    <p>графік роботи</p>
-                    <p>9:00 - 16:00 щодня</p>
-                    <p>неділя вихідний</p>
-                </div>
-                <div class="header-map">
-                    <a href="">
-                        <img src="map-icon.png" alt="Map Icon" width="20" height="20">
-                        <p>адреса</p>
-                        <p>м.Одеса</p>
-                    </a>
-                </div>
+                    </li>
+                    <li class="header-item">
+                        <svg class="header-item-svg">
+                            <use href="" alt="Arterius Logo" width="20" height="20">
+                            </use>
+                        </svg>
+                        <span class="schedule-span">графік роботи</span>
+                        <span>9:00 - 16:00 щодня</span>
+                        <span>неділя вихідний</span>
+                    </li>
+                    <li class="header-item">
+                        <a href="">
+                            <svg class="header-item-svg">
+                                <use href="" alt="Arterius Logo" width="20" height="20">
+                                </use>
+                            </svg>
+                            <span>адреса</span>
+                            <span>м.Одеса</span>
+                        </a>
+                    </li>
+                </ul>
             </address>
         </div>
-        <nav>
-            <ul>
-                <ul>
-                    <li><a href="#home">Головна</a></li>
-                    <li><a href="#about">Про нас</a></li>
-                    <li><a href="#services">Послуги</a></li>
-                    <li><a href="#doctors">Лікарі</a></li>
-                    <li><a href="#news">Новини</a></li>
-                    <li><a href="#contact">Контакти</a></li>
+        <nav class="container header-nav">
+            <ul class="header-nav-list">
+                <ul class="header-nav-list-list">
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#home">Головна</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#about">Про нас</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#services">Послуги</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#doctors">Лікарі</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#news">Новини</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#contact">Контакти</a></li>
                 </ul>
-                <ul>
-                    <li><a href="">
-                            <img src="find.png" alt="find-Icon" width="20" height="20">
+                <ul class="header-nav-list-list-button">
+                    <li class="header-nav-list-button"><a href="">
+                            <svg class="header-item-svg">
+                                <use href="" alt="Arterius Logo" width="20" height="20">
+                                </use>
+                            </svg>
                         </a></li>
-                    <li><a href="#sign_up">Записатись</a></li>
+                    <li class="header-nav-item-item"><button class="header-nav-button" type="button">Записатись</button>
+                    </li>
                 </ul>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1 hidden>діагностика дослідження Arterius</h1>
-            <img src="banner.jpg" alt="Banner Image" width="100%" height="300">
+        <section class="banner">
+            <div class="container">
+                <h1 class="banner-heading" hidden>діагностика дослідження Arterius</h1>
+                <img class="banner-image" src="./img/banner.webp" alt="Banner Image" width="100%" height="300">
+            </div>
         </section>
 
 
-        <section>
-            <h2>Наші послуги</h2>
-            <div class="services">
-                <div class="service-item">
-                    <img src="service1.jpg" alt="Service 1" width="200" height="150">
-                    <h3>УЗД дослідження</h3>
-                    <p>Діагностика серця, щитовидної, вилочкової, передміхурової, слинних залоз, черевної порожнини,
-                        нирок, голови. Дорослих та дітей.</p>
-                </div>
-                <div class="service-item">
-                    <img src="service2.jpg" alt="Service 2" width="200" height="150">
-                    <h3>Доплерографія</h3>
-                    <p>Метод ультразвукової діагностики, який дозволяє оцінити стан кровообігу в судинах. Процедура
-                        безпечна, безболісна та займає всього 15-30 хвилин.</p>
-                </div>
-                <div class="service-item">
-                    <img src="service3.jpg" alt="Service 3" width="200" height="150">
-                    <h3>ЕЕГ</h3>
-                    <p>Метод дослідження активності мозку, що допомагав в діагностиці неврологічних захворювань.
-                        Процедура безболема й безпечна.</p>
-                </div>
-                <div class="service-item">
-                    <img src="service3.jpg" alt="Service 3" width="200" height="150">
-                    <h3>ЕхоЕГ</h3>
-                    <p>УЗД серця, що оцінки його структуру, функцію та кровотік. Безпечний і безболісний метод
-                        діагностики.</p>
-                </div>
+        <section class="service">
+            <div class="container">
+                <h2 class="service-heading">Наші послуги</h2>
+                <ul class="service-list">
+                    <li class="service-item">
+                        <svg>
+                            <use href="" alt="Arterius Logo" width="50" height="50">
+                            </use>
+                        </svg>
+                        <h3 class="service-item-heading">УЗД дослідження</h3>
+                        <p class="service-item-text">Діагностика серця, щитовидної, вилочкової, передміхурової, слинних
+                            залоз, черевної порожнини,
+                            нирок, голови. Дорослих та дітей.</p>
+                    </li>
+                    <li class="service-item">
+                        <svg>
+                            <use href="" alt="Arterius Logo" width="50" height="50">
+                            </use>
+                        </svg>
+                        <h3 class="service-item-heading">Доплерографія</h3>
+                        <p class="service-item-text">Метод ультразвукової діагностики, який дозволяє оцінити стан
+                            кровообігу в судинах. Процедура
+                            безпечна, безболісна та займає всього 15-30 хвилин.</p>
+                    </li>
+                    <li class="service-item">
+                        <svg>
+                            <use href="" alt="Arterius Logo" width="50" height="50">
+                            </use>
+                        </svg>
+                        <h3 class="service-item-heading">ЕЕГ</h3>
+                        <p class="service-item-text">Метод дослідження активності мозку, що допомагав в діагностиці
+                            неврологічних захворювань.
+                            Процедура безболема й безпечна.</p>
+                    </li>
+                    <li class="service-item">
+                        <svg>
+                            <use href="" alt="Arterius Logo" width="50" height="50">
+                            </use>
+                        </svg>
+                        <h3 class="service-item-heading">ЕхоЕГ</h3>
+                        <p class="service-item-text">УЗД серця, що оцінки його структуру, функцію та кровотік. Безпечний
+                            і безболісний метод
+                            діагностики.</p>
+                    </li>
+                </ul>
+            </div>
 
         </section>
 
 
-        <section>
-            <div>
-                <h2>Лікарі</h2>
-            </div>
-            <div class="doctors">
-                <div class="doctor-item">
-                    <h3>Гастроентеролог</h3>
-                    <p>від 500грн</p>
+        <section class="doctors">
+            <div class="container">
+                <div>
+                    <h2 class="doctors-heading">Лікарі</h2>
                 </div>
-                <div class="doctor-item">
-                    <h3>Ендокринолог</h3>
-                    <p>від 600грн</p>
-                </div>
-                <div class="doctor-item">
-                    <h3>Невролог</h3>
-                    <p>від 500грн</p>
-                </div>
+                <ul class="doctors-list">
+                    <li class="doctor-item">
+                        <h3 class="doctor-item-name">Гастроентеролог</h3>
+                        <p class="doctor-item-price">від 500грн</p>
+                    </li>
+                    <li class="doctor-item">
+                        <h3 class="doctor-item-name">Ендокринолог</h3>
+                        <p class="doctor-item-price">від 600грн</p>
+                    </li>
+                    <li class="doctor-item">
+                        <h3 class="doctor-item-name">Невролог</h3>
+                        <p class="doctor-item-price">від 500грн</p>
+                    </li>
+                </ul>
             </div>
 
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <h2 class="news-heading">Новини</h2>
+                <ul class="snews-list">
+                    <li class="news-item">
+                        <img class="news-image" src="service1.jpg" alt="Service 1" width="200" height="150">
+                        <h3 class="news-item-heading">Новина свіжа</h3>
+                        <p class="news-item-text">Гарні новини! У медичному центрі «ARTERIUS» тільки 12 та 13 жовтня
+                            2024 року пацієнти можуть пройти УЗД серця зі знижкою 30%. Проведення ультразвукового
+                            дослідження допомагає виявити серцево-судинні захворювання на ранній стадії
+                            розвитку і дає лікарю змогу обрати найкращу стратегію лікування.</p>
+                    </li>
+                    <li class="news-item">
+                        <img class="news-image" src="service1.jpg" alt="Service 1" width="200" height="150">
+                        <h3 class="news-item-heading">Новина попередня</h3>
+                        <p class="news-item-text">Гарні новини! У медичному центрі «ARTERIUS» тільки 12 та 13 жовтня
+                            2024 року пацієнти можуть пройти УЗД серця зі знижкою 30%. Проведення ультразвукового
+                            дослідження допомагає виявити серцево-судинні захворювання на ранній стадії
+                            розвитку і дає лікарю змогу обрати найкращу стратегію лікування.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>
 
     <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <svg>
+                    <use href="" alt="Arterius Logo" width="120" height="20">
+                    </use>
+                </svg>
+                <span class="footer-logo-span">медичний центр</span>
+            </div>
+            <div class="footer-item">
+                <svg class="footer-item-svg">
+                    <use href="" alt="Arterius Logo" width="120" height="20">
+                    </use>
+                </svg>
+                <span class="footer-span">графік роботи</span>
+                <span>9:00 - 16:00 щодня</span>
+                <span>неділя вихідний</span>
+            </div>
+        </div>
 
     </footer>
 
