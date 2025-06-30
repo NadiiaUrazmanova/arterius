@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
                         <span>неділя вихідний</span>
                     </li>
                     <li class="header-item">
-                        <a href="">
+                        <a href="#map">
                             <svg class="header-item-svg">
                                 <use href="" alt="Arterius Logo" width="20" height="20">
                                 </use>
@@ -75,7 +76,8 @@
                                 </use>
                             </svg>
                         </a></li>
-                    <li class="header-nav-item-item"><button class="header-nav-button" type="button">Записатись</button>
+                    <li class="header-nav-item-item"><button id="openModal" class="header-nav-button"
+                            type="button">Записатись</button>
                     </li>
                 </ul>
             </ul>
@@ -187,6 +189,92 @@
                 </ul>
             </div>
         </section>
+        <iframe id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.1923995987754!2d30.726779275859666!3d46.48450256478814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631942570f7b5%3A0x3eb26d3c02ad0e74!2z0LLRg9C70LjRhtGPINCf0LDQstC70LAg0JfQtdC70LXQvdC-0LPQviwgNDEsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1suk!2sua!4v1751274752412!5m2!1suk!2sua"
+            width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+
+        <div class="modal-overlay" id="myModal">
+            <div class="modal">
+                <button class="modal-close-button" id="closeModal" type="button">
+                    <svg class="modal-close" width="8" height="8">
+                        <!-- <use href="./images/icons.svg#icon-close"></use> -->
+                    </svg>
+                </button>
+                <p class="modal-form-legend">Записатись на прийом</p>
+                <form class="modal-form" id="gform" name="user-form">
+
+                    <div class="modal-form-list">
+                        <label class="modal-label" for="user-name">Прізвище та ім'я</label>
+                        <div class="modal-label-container">
+                            <input class="modal-input" id="user-name" type="text" name="user-name" required />
+                            <svg class="modal-label-icon" width="18" height="24">
+                                <!-- <use href="./images/icons.svg#icon-name"> -->
+                                <!-- </use> -->
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="modal-form-list">
+                        <label class="modal-label" for="phone">Номер телефону</label>
+                        <div class="modal-label-container">
+                            <input class="modal-input" id="phone" type="tel" name="phone" placeholder="380-" required />
+                            <svg class="modal-label-icon" width="18" height="24">
+                                <!-- <use href="./images/icons.svg#icon-phone"></use> -->
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="modal-form-list">
+                        <label class="modal-label" for="email">Адреса електронної пошти</label>
+                        <div class="modal-label-container">
+                            <input class="modal-input" id="email" type="email" name="email" required />
+                            <svg class="modal-label-icon" width="18" height="24">
+                                <!-- <use href="./images/icons.svg#icon-email"></use> -->
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                    <div class="modal-form-list">
+                        <label class="modal-label" for="doctor">Лікар, до якого бажаєте записатись</label>
+                        <div class="modal-label-container">
+                            <input class="modal-input" id="doctor" type="text" name="doctor" required />
+                            <svg class="modal-label-icon" width="18" height="24">
+                                <!-- <use href="./images/icons.svg#icon-name"> -->
+                                <!-- </use> -->
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="modal-form-list-second">
+                        <label class="modal-label" for="user-comment">Додаткова інформація</label>
+                        <textarea class="modal-textarea" id="user-comment" name="user-comment"
+                            placeholder="Тут можна вказати бажані дату та час"></textarea>
+                    </div>
+
+                    <div class="modal-form-checkbox">
+                        <input class="visually-hidden modal-form-checkbox-input" type="checkbox" id="user-privacy"
+                            name="user-privacy" value="true" required />
+                        <label class="label-checkbox" for="user-privacy">
+                            <span class="span-checkbox">
+                                <!-- <svg class="checkbox-icon" width="10" height="8">
+                                    <use href="./images/icons.svg#icon-Vector-1"></use>
+                                </svg> -->
+                            </span>
+                            <span class="checkbox-text">Я приймаю умови та положення Політики конфіденційності
+                                <a href="#" class="modal-form-checkbox-link">Privacy Policy</a>
+                            </span>
+                        </label>
+                    </div>
+                    <button class="modal-button" type="submit">Надіслати заявку на прийом
+                    </button>
+                </form>
+            </div>
+        </div>
 
     </main>
 
