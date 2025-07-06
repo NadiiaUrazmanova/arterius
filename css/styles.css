@@ -20,7 +20,7 @@ p {
 ul {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;    
+    padding-left: 0;
 }
 
 li {
@@ -52,26 +52,11 @@ body {
     color: var(--first-color);
 }
 
-/* .container {
+.container {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 16px;
-    }
-    
-    @media (min-width: 768px) {
-        .container {
-            max-width: 768px;
-        }
-    }
-    
-    @media (min-width: 1280px) { */
-        .container {
-            max-width: 1158px;
-            margin: 0 auto;
-            padding: 0 156px;
-        }
-    /* } */
-
+}
 
 .header-container {
     display: flex;
@@ -86,9 +71,10 @@ body {
 }
 
 .header-logo-svg {
-    width: 120px;
+    width: 160px;
     height: 20px;
     background-color: var(--first-color);
+    fill: var(--fourth-color);
 }
 
 .header-logo-span {
@@ -98,99 +84,59 @@ body {
 
 .contact {
     display: flex;
-    gap: 18px;
+    gap: 12px;
 }
 
 .header-item {
-    max-width: 150px;
+    max-width: 80px;
 }
 
 .header-item-svg {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: var(--first-color);
+    /* fill: var(--first-color); */
 }
-
-/* .header-tel {
-    display: flex;
-    flex-direction: column;
-    
-} */
 
 .header-tel-link {
     color: var(--first-color);
     padding: 6px 6px;
 }
 
-.header-tel-icon {}
-
 .header-tel-span {
     color: var(--fourth-color);
     text-transform: uppercase;
-    padding: 0 6px 0;
+    /* padding: 0 6px 0; */
 }
 
 .contact {
-    display: flex;
+    
 }
-
-.header-tel {}
-
-/* .header-schedule {} */
 
 .schedule-span {
     text-transform: uppercase;
 }
 
-/* .header-map {} */
-
 .header-nav {
-    display: flex;
     background-color: var(--first-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
-    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;    
 }
 
 .header-nav-list {
-    display: flex;
-    
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .header-nav-list-list {
     display: flex;
-    gap: 18px;
-}
-
-.header-nav-list-button {
-    display: flex;
     flex-direction: row;
-    
-
-}
-
-
-
-/* .header-nav-list-list:first-child {
-    color: var(--third-color);
-} */
-
-.header-nav-item {
-    
+    gap: 12px;
+    align-items: center;
 }
 
 .header-nav-item-link {
-    color: var(--second-color);
-
-
-}
-
-.header-nav-item-item {
-    
-}
-
-.header-nav-icon {
     color: var(--second-color);
 }
 
@@ -199,141 +145,83 @@ body {
     background-color: var(--fourth-color);
     border: none;
     height: 30px;
-    min-width: 100px;
+    min-width: 130px;
     border-radius: 15px;
     text-transform: uppercase;
 }
 
-
-
-
-.banner {}
-
-.banner-heading {}
-
-.banner-image {}
-
-.service {}
-
-.service-heading {
-    padding-bottom: 32px;
-    color: var(--third-color);
-}
-
-.service-list {
-    display: flex;
-    gap: 18px;
-}
-
-.service-item {
-    border: 1px solid var(--first-color);
-    border-radius: 12px;
-    max-width: calc((100% - 54px) / 3);
-    padding: 18px 24px 18px;
-}
-
-.service-item:focus {
-    color: var(--second-color);
-    background-color: var(--third-color);
-}
-
-.service-item:hover {
-    color: var(--second-color);
-    background-color: var(--third-color);
-}
-
-
-.service-image {
+.first-page {
+    padding-top: 12px;
     padding-bottom: 12px;
 }
 
-.service-item-heading {
-    padding-bottom: 18px;
-}
-
-.service-item-text {}
-
-.doctors {
-    padding-top: 32px;
-    
-}
-
-.doctors-heading {
-    background-color: var(--first-color);
-    color: var(--second-color);
-    padding: 18px 24px 18px 24px;
-    border-radius: 0px 0px 12px 12px;
+.first-page-heading {
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
     margin-bottom: 24px;
-    font-size: 1.5;
 }
 
-.doctors-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 18px;
+.first-page-heading-span {
+    text-transform: uppercase;
+    color: var(--fourth-color);
+    font-size: 24px;
 }
 
-.doctor-item {
+.first-page-image {
+    background-image: url();
+    max-width: 70%;
+    height: 200px;
+    background-color: var(--fourth-color);
+    background-repeat: no-repeat;
+    /* background-position: 50%; */
+    margin-bottom: 24px;
+}
+
+.research-doctor-section {
     display: flex;
     justify-content: space-between;
-    gap: 18px;
-    
+    flex-wrap: wrap;
+    margin-bottom: 24px;
 }
 
-.doctor-item-name {
-    border: 2px solid var(--first-color);
-    padding: 18px 24px 18px 24px;
-    border-radius: 12px;
-    flex-grow: 1.5;
-    
-}
-
-.doctor-item-price {
-    border: 2px solid var(--first-color);
-    border-radius: 12px;
-    width: 400px;
-    flex-grow: 0;
-    padding: 18px 24px 18px 24px;
+.section-title {
+    font-size: 24px;
+    margin-bottom: 12px;
     text-align: center;
-    
 }
 
-
-.news-heading {
-    padding-bottom: 32px;
-    color: var(--third-color);
+.research-list,
+.doctor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .news-list {
     display: flex;
-    gap: 18px;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 24px;
 }
 
 .news-item {
+    padding: 6px;
     border: 1px solid var(--first-color);
-    border-radius: 12px;
-    flex-basis: calc((100% - 54px) / 3);
-    padding: 18px 24px 18px;
+    border-radius: 6px;
 }
 
-.news-item:focus {
+.research-item,
+.doctor-item {
+    background-color: var(--first-color);
     color: var(--second-color);
-    background-color: var(--third-color);
-}
-
-.news-item:hover {
-    color: var(--second-color);
-    background-color: var(--third-color);
+    padding: 6px;
+    border-radius: 6px;
 }
 
 
-.news-image {
-    padding-bottom: 12px;
-}
 
-.news-item-heading {
-    padding-bottom: 18px;
-}
+
 
 .footer-container {
     display: flex;
@@ -345,7 +233,7 @@ body {
     color: var(--fourth-color);
     text-align: center;
     max-width: 150px;
-    
+
 }
 
 .footer-item-svg {
@@ -380,7 +268,7 @@ body {
     background-color: rgba(46, 47, 66, 0.4);
     z-index: 999;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .modal-overlay.is-open {
@@ -613,4 +501,14 @@ body {
     border: none;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer-container {
+    display: flex;
+    background-color: var(--first-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: space-between;
+    color: var(--second-color);
 }

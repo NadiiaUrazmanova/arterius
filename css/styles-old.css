@@ -1,0 +1,186 @@
+
+/* 
+    
+    @media (min-width: 768px) {
+        .container {
+            max-width: 768px;
+        }
+    }
+    
+    @media (min-width: 1280px) { */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 156px;
+        }
+    /* } */
+
+
+
+
+
+
+
+
+
+
+
+
+.header-nav-item {
+    
+}
+
+
+
+
+}
+
+.header-nav-item-item {
+    
+}
+
+.header-nav-icon {
+    color: var(--second-color);
+}
+
+.header-nav-button {
+    color: var(--second-color);
+    background-color: var(--fourth-color);
+    border: none;
+    height: 30px;
+    min-width: 100px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+
+
+
+.banner {}
+
+.banner-heading {}
+
+.banner-image {}
+
+.service {}
+
+.service-heading {
+    padding-bottom: 32px;
+    color: var(--third-color);
+}
+
+.service-list {
+    display: flex;
+    gap: 18px;
+}
+
+.service-item {
+    border: 1px solid var(--first-color);
+    border-radius: 12px;
+    max-width: calc((100% - 54px) / 3);
+    padding: 18px 24px 18px;
+}
+
+.service-item:focus {
+    color: var(--second-color);
+    background-color: var(--third-color);
+}
+
+.service-item:hover {
+    color: var(--second-color);
+    background-color: var(--third-color);
+}
+
+
+.service-image {
+    padding-bottom: 12px;
+}
+
+.service-item-heading {
+    padding-bottom: 18px;
+}
+
+.service-item-text {}
+
+.doctors {
+    padding-top: 32px;
+    
+}
+
+.doctors-heading {
+    background-color: var(--first-color);
+    color: var(--second-color);
+    padding: 18px 24px 18px 24px;
+    border-radius: 0px 0px 12px 12px;
+    margin-bottom: 24px;
+    font-size: 1.5;
+}
+
+.doctors-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+.doctor-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    
+}
+
+.doctor-item-name {
+    border: 2px solid var(--first-color);
+    padding: 18px 24px 18px 24px;
+    border-radius: 12px;
+    flex-grow: 1.5;
+    
+}
+
+.doctor-item-price {
+    border: 2px solid var(--first-color);
+    border-radius: 12px;
+    width: 400px;
+    flex-grow: 0;
+    padding: 18px 24px 18px 24px;
+    text-align: center;
+    
+}
+
+
+.news-heading {
+    padding-bottom: 32px;
+    color: var(--third-color);
+}
+
+.news-list {
+    display: flex;
+    gap: 18px;
+}
+
+.news-item {
+    border: 1px solid var(--first-color);
+    border-radius: 12px;
+    flex-basis: calc((100% - 54px) / 3);
+    padding: 18px 24px 18px;
+}
+
+.news-item:focus {
+    color: var(--second-color);
+    background-color: var(--third-color);
+}
+
+.news-item:hover {
+    color: var(--second-color);
+    background-color: var(--third-color);
+}
+
+
+.news-image {
+    padding-bottom: 12px;
+}
+
+.news-item-heading {
+    padding-bottom: 18px;
+}
+
