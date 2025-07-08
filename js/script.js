@@ -58,4 +58,11 @@ function setTextFormat() {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     const range = sheet.getRange("B2:B10000");
     range.setNumberFormat("@");  
-  }
+}
+  
+const burger = document.querySelector('.burger-button');
+  const navWrapper = document.querySelector('.header-nav-wrapper');
+
+  burger.addEventListener('click', () => {
+    navWrapper.classList.toggle('open');
+  });

@@ -20,16 +20,19 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <svg class="header-logo-svg">
-                    <use href="./icons/ARTERIUS.svg" alt="Arterius Logo" width="120" height="20">
-                    </use>
-                </svg>
-                <span class="header-logo-span">медичний центр</span>
+                <a href="index.html" class="logo-link">
+                    <svg class="header-logo-svg">
+                        <use href="./icons/ARTERIUS.svg" alt="Arterius Logo" width="120" height="20">
+                        </use>
+                    </svg>
+                    <span class="header-logo-span">медичний центр</span>
+                </a>
             </div>
+
             <address>
                 <ul class="contact">
-                    <li class="header-item">
-                        <svg class="header-item-svg">
+                    <li class="header-item tel">
+                        <svg class="header-item-svg tel-svg">
                             <use href="./icons/icon-tel.svg" alt="tel" width="20" height="20">
                             </use>
                         </svg>
@@ -37,8 +40,8 @@
                         <a class="header-tel-link" href="tel:+380975004214">(097) 500-42-14</a>
 
                     </li>
-                    <li class="header-item">
-                        <svg class="header-item-svg">
+                    <li class="header-item schedule">
+                        <svg class="header-item-svg schedule-svg">
                             <use href="./icons/3643779_clock_hour_ticker_time_times_icon.svg" alt="cklock" width="20"
                                 height="20">
                             </use>
@@ -47,32 +50,38 @@
                         <span>9:00 - 16:00 щодня</span>
                         <span>неділя вихідний</span>
                     </li>
-                    <li class="header-item">
-                        <a href="#map">
-                            <svg class="header-item-svg">
-                                <use href="./icons/9004685_location_map_pin_navigation_marker_icon.svg"
-                                    alt="geolocation" width="20" height="20">
-                                </use>
-                            </svg>
-                            <span>адреса</span>
-                            <span>м.Одеса</span>
+                    <li class="header-item geo">
+                        <svg class="header-item-svg geo-svg">
+                            <use href="./icons/9004685_location_map_pin_navigation_marker_icon.svg" alt="geolocation"
+                                width="20" height="20">
+                            </use>
+                        </svg>
+                        <a href="#map"></a>
+                        <span>адреса</span>
+                        <span>м.Одеса</span>
                         </a>
                     </li>
                 </ul>
             </address>
         </div>
         <nav class="container header-nav">
-            <ul class="header-nav-list">
-                <li class="header-nav-item"><a class="header-nav-item-link" href="#home">Головна</a></li>
-                <li class="header-nav-item"><a class="header-nav-item-link" href="#about">Про нас</a></li>
-                <li class="header-nav-item"><a class="header-nav-item-link" href="#services">Послуги</a></li>
-                <li class="header-nav-item"><a class="header-nav-item-link" href="#doctors">Лікарі</a></li>
-                <li class="header-nav-item"><a class="header-nav-item-link" href="#news">Новини</a></li>
-                <li class="header-nav-item"><a class="header-nav-item-link" href="#contact">Контакти</a></li>
-                <li class="header-nav-item-item"><button id="openModal" class="header-nav-button"
-                        type="button">Записатись</button>
-                </li>
-            </ul>
+            <button class="burger-button" aria-label="Меню">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span> </button>
+            <div class="header-nav-wrapper">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#home">Головна</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#about">Про нас</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#services">Послуги</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#doctors">Лікарі</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#news">Новини</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#contact">Контакти</a></li>
+                    </li>
+                </ul>
+            </div>
+            <li class="header-nav-item-item"><button id="openModal" class="header-nav-button"
+                    type="button">Записатись</button>
         </nav>
     </header>
 
@@ -128,9 +137,9 @@
                 </ul>
             </div>
         </section>
-        <!-- <iframe id="map"
+        <!-- <iframe id="map class="map""
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.1923995987754!2d30.726779275859666!3d46.48450256478814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631942570f7b5%3A0x3eb26d3c02ad0e74!2z0LLRg9C70LjRhtGPINCf0LDQstC70LAg0JfQtdC70LXQvdC-0LPQviwgNDEsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1suk!2sua!4v1751274752412!5m2!1suk!2sua"
-            width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy"
+             allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe> -->
 
@@ -201,19 +210,19 @@
 
     <footer>
         <div class="container footer-container">
-            <div><span class="footer-span">графік роботи</span>
+            <div class="footer-shedule"><span class="footer-span">графік роботи</span>
                 <span>9:00 - 16:00 щодня</span>
                 <span>неділя вихідний</span>
             </div>
             <button id="openModalЙQuestion" class="footer-button" type="button">Задайте запитання лікарю</button>
             <div class="footer-contacts">
-                <p>Телефони для запису та консультації</p>
-                <div class="footer-tel-list">
-                    <a class="footer-tel-link" href="tel:+380975004214">(097) 500-42-14</a>
-                    <a class="footer-tel-link" href="tel:+380930309747">(093) 030-97-47</a>
-                    <a class="footer-tel-link" href="tel:+380487877965">(048) 787-79-65</a>
-                    <a class="footer-tel-link" href="tel:+380669634017">(066) 963-40-17</a>
-                </div>
+                <p class="footer-contacts-heading">Телефони для запису та консультації</p>
+                <ul class="footer-tel-list">
+                    <li><a class="footer-tel-link" href="tel:+380975004214">(097) 500-42-14</a></li>
+                    <li><a class="footer-tel-link" href="tel:+380930309747">(093) 030-97-47</a></li>
+                    <li><a class="footer-tel-link" href="tel:+380487877965">(048) 787-79-65</a></li>
+                    <li><a class="footer-tel-link" href="tel:+380669634017">(066) 963-40-17</a></li>
+                </ul>
             </div>
             <span>Ліцензія №</span>
         </div>
