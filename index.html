@@ -22,60 +22,40 @@
             <div class="logo">
                 <a href="index.html" class="logo-link">
                     <svg class="header-logo-svg">
-                        <use href="./icons/ARTERIUS.svg" alt="Arterius Logo" width="120" height="20">
+                        <use href="./icons/icons.svg#icon-logo" alt="Arterius Logo" width="120" height="20">
                         </use>
                     </svg>
                     <span class="header-logo-span">медичний центр</span>
                 </a>
             </div>
 
-            <address>
-                <ul class="contact">
-                    <li class="header-item tel">
-                        <svg class="header-item-svg tel-svg">
-                            <use href="./icons/icon-tel.svg" alt="tel" width="20" height="20">
-                            </use>
-                        </svg>
-                        <span class="header-tel-span">гаряча лінія </span>
-                        <a class="header-tel-link" href="tel:+380975004214">(097) 500-42-14</a>
-
-                    </li>
-                    <li class="header-item schedule">
-                        <svg class="header-item-svg schedule-svg">
-                            <use href="./icons/3643779_clock_hour_ticker_time_times_icon.svg" alt="cklock" width="20"
-                                height="20">
-                            </use>
-                        </svg>
-                        <span class="schedule-span">графік роботи</span>
-                        <span>9:00 - 16:00 щодня</span>
-                        <span>неділя вихідний</span>
-                    </li>
-                    <li class="header-item geo">
-                        <svg class="header-item-svg geo-svg">
-                            <use href="./icons/9004685_location_map_pin_navigation_marker_icon.svg" alt="geolocation"
-                                width="20" height="20">
-                            </use>
-                        </svg>
-                        <a href="#map" id="openMapModal">
-                            <span>адреса<br>
-                                м.Одеса</span>
-                        </a>
-                    </li>
-                </ul>
+            <address class="header-item">
+                <svg class="header-item-svg geo-svg">
+                    <use href="./icons/icons.svg#icon-map" alt="geolocation" width="20" height="20">
+                    </use>
+                </svg>
+                <a href="#map" id="openMapModal">
+                    <span>адреса:<br>
+                        м.Одеса, вул. П.Зеленого (Коблевська),41</span>
+                </a>
             </address>
         </div>
         <nav class="container header-nav">
             <button class="burger-button" aria-label="Меню">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span> </button>
+                <div class="burger-lines">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <span class="burger-arrow">&larr; меню</span>
+            </button>
             <div class="header-nav-wrapper">
                 <ul class="header-nav-list">
                     <li class="header-nav-item"><a class="header-nav-item-link" href="#home">Головна</a></li>
-                    <li class="header-nav-item"><a class="header-nav-item-link" href="#about">Про нас</a></li>
-                    <li class="header-nav-item"><a class="header-nav-item-link" href="#services">Послуги</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#about">Галерея</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#services">Обстеження</a></li>
                     <li class="header-nav-item"><a class="header-nav-item-link" href="#doctors">Лікарі</a></li>
-                    <li class="header-nav-item"><a class="header-nav-item-link" href="#news">Новини</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="#news">Корисна інформація</a></li>
                     <li class="header-nav-item"><a class="header-nav-item-link" href="#contact">Контакти</a></li>
                     </li>
                 </ul>
@@ -89,20 +69,55 @@
     <main>
         <section class="first-page">
             <div class="container">
-                <h1 class="first-page-heading">медичний центр
-                    <span class="first-page-heading-span">Arterius</span> діагностика організму
-                </h1>
-                <img class="first-page-image" src="" alt="banner" width="100%" height="300">
+                <div class="first-page-heading-container">
+                    <h1 class="first-page-heading">медичний центр </h1>
+                    <p class="first-page-heading first-page-heading-span">Arterius</p>
+                    <p class="first-page-heading">
+                        діагностика організму
+                    </p>
+                </div>
+                <img class="banner" src="./img/banner.jpg" alt="banner" width="100%" height="300">
 
                 <div class="research-doctor-section">
                     <div class="research-main-list">
-                        <h2 class="section-title">Дослідження</h2>
+                        <h2 class="section-title">Обстеження</h2>
                         <ul class="research-list">
-                            <li class="research-item">УЗД всі види дітям та дорослим</li>
-                            <li class="research-item">ЕХО (внутрішньочерепний тиск)</li>
-                            <li class="research-item">ЕЕГ робота мозку</li>
-                            <li class="research-item">ЕКГ дослідження серця</li>
-                            <li class="research-item">Холтер АД, ЕКГ, ЕНМГ</li>
+                            <li class="research-item">
+                                <div class="research-content">УЗД всі види дітям та дорослим</div>
+                                <div class="research-item-text">
+                                    УЗД дітям проводиться з першого місяця до 16 років.
+                                    Дорослим — чоловікам і жінкам — з 16 років.
+                                </div>
+                            </li>
+                            <li class="research-item">
+                                <div class="research-content">ЕХО (внутрішньочерепний тиск)</div>
+                                <div class="research-item-text">
+                                    УЗД дітям проводиться з першого місяця до 16 років.
+                                    Дорослим — чоловікам і жінкам — з 16 років.
+                                </div>
+                            </li>
+                            <li class="research-item">
+                                <div class="research-content">ЕЕГ робота мозку</div>
+                                <div class="research-item-text">
+                                    УЗД дітям проводиться з першого місяця до 16 років.
+                                    Дорослим — чоловікам і жінкам — з 16 років.
+                                </div>
+
+                            </li>
+                            <li class="research-item">
+                                <div class="research-content">ЕКГ дослідження серця</div>
+                                <div class="research-item-text">
+                                    УЗД дітям проводиться з першого місяця до 16 років.
+                                    Дорослим — чоловікам і жінкам — з 16 років.
+                                </div>
+                            </li>
+                            <li class="research-item">
+                                <div class="research-content">Холтер АД, ЕКГ, ЕНМГ</div>
+                                <div class="research-item-text">
+                                    УЗД дітям проводиться з першого місяця до 16 років.
+                                    Дорослим — чоловікам і жінкам — з 16 років.
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="doctor-main-list">
@@ -120,46 +135,33 @@
         </section>
 
         <section class="news">
-            <div class="container">
-                <ul class="news-list">
-                    <li class="news-item">
-                        <h3 class="news-item-heading">Новини</h3>
-                        <p class="news-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-                            quae ratione itaque aspernatur, cumque architecto dolorum? Distinctio non fugit porro nemo
-                            laboriosam ad facilis cum, id voluptates deleniti eligendi illum.</p>
-                    </li>
-                    <li class="news-item">
-                        <h3 class="news-item-heading">Акції</h3>
-                        <p class="news-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-                            quae ratione itaque aspernatur, cumque architecto
-                            dolorum? Distinctio non fugit porro nemo laboriosam ad facilis cum, id voluptates deleniti
-                            eligendi illum.</p>
-                    </li>
-                </ul>
+            <div class="container news-container">
+                <h3 class="news-item-heading">Новини. Акції</h3>
+                <p class="news-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+                    quae ratione itaque aspernatur, cumque architecto dolorum? Distinctio non fugit porro nemo
+                    laboriosam ad facilis cum, id voluptates deleniti eligendi illum.</p>
             </div>
+            <button id="openModalQ" class="question-button" type="button">Задайте запитання лікарю</button>
         </section>
-
-
-
-
 
     </main>
 
     <footer>
         <div class="container footer-container">
-            <div class="footer-shedule"><span class="footer-span">графік роботи</span>
-                <span>9:00 - 16:00 щодня</span>
-                <span>неділя вихідний</span>
-            </div>
-            <button id="openModalQ" class="footer-button" type="button">Задайте запитання лікарю</button>
-            <div class="footer-contacts">
-                <p class="footer-contacts-heading">Телефони для запису та консультації</p>
-                <ul class="footer-tel-list">
-                    <li><a class="footer-tel-link" href="tel:+380975004214">(097) 500-42-14</a></li>
-                    <li><a class="footer-tel-link" href="tel:+380930309747">(093) 030-97-47</a></li>
-                    <li><a class="footer-tel-link" href="tel:+380487877965">(048) 787-79-65</a></li>
-                    <li><a class="footer-tel-link" href="tel:+380669634017">(066) 963-40-17</a></li>
-                </ul>
+            <div class="footer-tel-shadule">
+                <div class="footer-contacts">
+                    <p class="footer-contacts-heading">Телефони для запису та консультації</p>
+                    <ul class="footer-tel-list">
+                        <li><a class="footer-tel-link" href="tel:+380975004214">(097) 500-42-14</a></li>
+                        <li><a class="footer-tel-link" href="tel:+380930309747">(093) 030-97-47</a></li>
+                        <li><a class="footer-tel-link" href="tel:+380487877965">(048) 787-79-65</a></li>
+                        <li><a class="footer-tel-link" href="tel:+380669634017">(066) 963-40-17</a></li>
+                    </ul>
+                </div>
+                <div class="footer-shedule"><span class="footer-span">графік роботи</span>
+                    <span>9:00 - 16:00 щодня</span>
+                    <span>неділя вихідний</span>
+                </div>
             </div>
             <span>Ліцензія №</span>
         </div>
@@ -180,10 +182,19 @@
     <div class="modal-overlay" id="myModal">
         <div class="modal">
             <button class="modal-close-button" id="closeModal" type="button">
-                <svg class="modal-close" width="8" height="8">
-                    <!-- <use href="./images/icons.svg#icon-close"></use> -->
+                <svg class="modal-close" width="12" height="12">
+                    <use href="./icons/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <svg class="header-logo-svg">
+                        <use href="./icons/icons.svg#icon-logo" alt="Arterius Logo" width="120" height="20">
+                        </use>
+                    </svg>
+                    <span class="header-logo-span">медичний центр</span>
+                </a>
+            </div>
             <p class="modal-form-legend">Записатись на прийом</p>
             <form class="modal-form" id="gform" name="user-form">
 
@@ -192,18 +203,17 @@
                     <div class="modal-label-container">
                         <input class="modal-input" id="user-name" type="text" name="user-name" required />
                         <svg class="modal-label-icon" width="18" height="24">
-                            <!-- <use href="./images/icons.svg#icon-name"> -->
-                            <!-- </use> -->
+                            <use href="./icons/icons.svg#icon-person">
+                            </use>
                         </svg>
                     </div>
                 </div>
-
                 <div class="modal-form-list">
                     <label class="modal-label" for="phone">Номер телефону (у форматі 380__-___-__-__)</label>
                     <div class="modal-label-container">
                         <input class="modal-input modal-input-phone" id="phone" type="tel" name="phone" required />
                         <svg class="modal-label-icon" width="18" height="24">
-                            <!-- <use href="./images/icons.svg#icon-phone"></use> -->
+                            <use href="./icons/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
@@ -214,6 +224,9 @@
                     </label>
                     <label class="modal-form-masseng">
                         <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                    </label>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
                     </label>
 
                 </div>
@@ -238,9 +251,18 @@
         <div class="modal-question">
             <button class="modal-close-button-question" id="closeModalQ" type="button">
                 <svg class="modal-close-question" width="8" height="8">
-                    <!-- <use href="./images/icons.svg#icon-close"></use> -->
+                    <use href="./icons/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <svg class="header-logo-svg">
+                        <use href="./icons/icons.svg#icon-logo" alt="Arterius Logo" width="120" height="20">
+                        </use>
+                    </svg>
+                    <span class="header-logo-span">медичний центр</span>
+                </a>
+            </div>
             <p class="modal-form-legend-question">Задайте Ваше запитання</p>
             <form class="modal-form-question" id="formQ" name="user-form-question">
 
@@ -249,8 +271,8 @@
                     <div class="modal-label-container-question">
                         <input class="modal-input-question" id="user-nameQ" type="text" name="user-name" required />
                         <svg class="modal-label-icon-question" width="18" height="24">
-                            <!-- <use href="./images/icons.svg#icon-name"> -->
-                            <!-- </use> -->
+                            <use href="./icons/icons.svg#icon-person">
+                            </use>
                         </svg>
                     </div>
                 </div>
@@ -261,7 +283,7 @@
                         <input class="modal-input modal-input-phone-question" id="phoneQ" type="tel" name="phone"
                             required />
                         <svg class="modal-label-icon-question" width="18" height="24">
-                            <!-- <use href="./images/icons.svg#icon-phone"></use> -->
+                            <use href="./icons/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
@@ -274,13 +296,16 @@
                     <label class="modal-form-masseng-question">
                         <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
                     </label>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                    </label>
 
                 </div>
 
                 <div class="modal-form-list-question">
                     <label class="modal-label-question" for="question"></label>
                     <div class="modal-label-container-question">
-                        <textarea class="modal-input-question" id="question" name="question"
+                        <textarea class="modal-input-question" id="question" name="question" rows="5"
                             placeholder="Напишіть тут Ваше запитання">
                         </textarea>
                     </div>
