@@ -63,11 +63,15 @@ function setTextFormat() {
 }
 
 // Бургер-меню
-const burger = document.querySelector('.burger-button');
-const navWrapper = document.querySelector('.header-nav-wrapper');
+document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.querySelector(".burger-button");
+    const navWrapper = document.querySelector(".header-nav-wrapper");
 
-burger.addEventListener('click', () => {
-  navWrapper.classList.toggle('open');
+    if (burger && navWrapper) {
+        burger.addEventListener("click", () => {
+            navWrapper.classList.toggle("open");
+        });
+    }
 });
 
 // Модалка з картою

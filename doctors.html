@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arterius</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <svg class="header-logo-svg">
+                        <use href="./icons/icons.svg#icon-logo" alt="Arterius Logo" width="120" height="20">
+                        </use>
+                    </svg>
+                    <span class="header-logo-span">медичний центр</span>
+                </a>
+            </div>
+
+            <address class="header-item">
+                <svg class="header-item-svg geo-svg">
+                    <use href="./icons/icons.svg#icon-map" alt="geolocation" width="20" height="20">
+                    </use>
+                </svg>
+                <a href="#map" id="openMapModal">
+                    <span>адреса:<br>
+                        м.Одеса,<br> вул. П.Зеленого (Коблевська),41</span>
+                </a>
+            </address>
+        </div>
+        <nav class="container header-nav">
+            <button class="burger-button" aria-label="Меню">
+                <div class="burger-lines">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <span class="burger-arrow">&larr; меню</span>
+            </button>
+            <div class="header-nav-wrapper">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./index.html">Головна</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./gallery.html">Галерея</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./research.html">Обстеження</a>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./doctors.html">Лікарі</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./info.html">Корисна
+                            інформація</a>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+            <button id="openModal" class="header-nav-button" type="button">Записатись</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="doctors">
+            <div class="container">
+                <h2 class="section-title">Лікарі</h2>
+                <ul class="doctors-list">
+                    <li class="doctors-item">
+                        <p class="doctors-item-content">УЗД дітям проводиться з першого місяця до 16 років.
+                            Дорослим — чоловікам і жінкам — з 16 років.
+                        </p>
+                    </li>
+                    <li class="doctors-item">
+                        <p class="doctors-item-content">УЗД дітям проводиться з першого місяця до 16 років.
+                            Дорослим — чоловікам і жінкам — з 16 років.
+                        </p>
+                    </li>
+                    <li class="doctors-item">
+                        <p class="doctors-item-content">УЗД дітям проводиться з першого місяця до 16 років.
+                            Дорослим — чоловікам і жінкам — з 16 років.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-tel-shadule">
+                <div class="footer-contacts">
+                    <p class="footer-contacts-heading">Телефони для запису та консультації</p>
+                    <ul class="footer-tel-list">
+                        <li><a class="footer-tel-link" href="tel:+380975004214">(097) 500-42-14</a></li>
+                        <li><a class="footer-tel-link" href="tel:+380930309747">(093) 030-97-47</a></li>
+                        <li><a class="footer-tel-link" href="tel:+380487877965">(048) 787-79-65</a></li>
+                        <li><a class="footer-tel-link" href="tel:+380669634017">(066) 963-40-17</a></li>
+                    </ul>
+                </div>
+                <div class="footer-shedule"><span class="footer-span">графік роботи</span>
+                    <span>9:00 - 16:00 щодня</span>
+                    <span>неділя вихідний</span>
+                </div>
+            </div>
+            <span>Ліцензія №</span>
+        </div>
+
+    </footer>
+</body>
+
+</html>
