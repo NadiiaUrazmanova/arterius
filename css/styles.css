@@ -67,20 +67,24 @@ body {
 }
 @media (min-width: 768px) {
     body {
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px) {
+    body {
         font-size: 18px;
     }
 }
 
-
 .container {
     max-width: 90%;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 16px;
 }
 
 @media (min-width: 1024px) {
     .container {
-        padding: 0 60px;}
+        padding: 0 30px;}
     }
 
 
@@ -120,8 +124,15 @@ align-items: center;
 .header-item {
     max-width: 120px;
     font-size: 14px;
-    position: relative;
+    position: relative;    
 }
+@media (min-width: 1024px) {
+    .header-item {        
+        font-size: 18px; 
+        max-width: 150px;       
+    }
+}
+
 
 .geo-svg {
     position: absolute;
@@ -136,6 +147,12 @@ align-items: center;
     fill: var(--first-color);
 }
 
+.header-ad-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 
 .header-nav {
@@ -147,19 +164,9 @@ align-items: center;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
-    margin-bottom: 20px;
+    gap: 16px;    
 }
-@media (min-width: 768px) {
-    .header-nav {
-        margin-bottom: 30px;
-    }
-}
-@media (min-width: 1024px) {
-    .header-nav {
-        margin-bottom: 60px;
-    }
-}
+
 
 .burger-button {
     display: flex;
@@ -204,8 +211,7 @@ align-items: center;
     background-color: var(--first-color);
     width: 100%;
     padding: 16px;
-    position: absolute;
-    top: 100%;
+    position: absolute;    
     left: 0;
     z-index: 800;
 }
@@ -243,9 +249,8 @@ align-items: center;
 }
 @media (min-width: 1024px) {
     .header-nav-list {
-        gap: 24px;
-        flex-grow: 1;
-        justify-content: flex-start;
+        gap: 12px;        
+        justify-content: space-between;
     }
 }
 
@@ -271,6 +276,14 @@ align-items: center;
     }
 }
 
+@media (min-width: 1024px) {
+    .header-nav-button {
+        height: 50px;
+        min-width: 180px;
+        font-size: 18px;
+    }
+}
+
 
 
 
@@ -281,12 +294,16 @@ align-items: center;
 }
 @media (min-width: 768px) {
     .first-page {
-        font-size: 24px;        
+        font-size: 24px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }    
 }
 @media (min-width: 1024px) {
     .first-page {
         font-size: 32px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }    
 }
 
@@ -334,6 +351,17 @@ align-items: center;
     }    
 }
 
+@media (min-width: 1024px) {
+.first-page-container {
+display: flex;
+flex-direction: row;
+gap: 60px;
+/* justify-content: space-between; */
+}
+}
+
+
+
 .banner-container {
     max-width: 100%;
     height: auto;    
@@ -347,7 +375,9 @@ align-items: center;
 }
 @media (min-width: 1024px) {
     .banner-container {
-        max-width: 50%;   
+        max-width: 500px;
+        align-self: flex-start;
+        flex-basis: (calc(100% - 60px) / 2);
     }
 }
 
@@ -361,6 +391,15 @@ border-radius: 6px;
     justify-content: space-between;
     flex-wrap: wrap;
     
+}
+
+@media (min-width: 1024px) {
+.research-doctor-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    flex-basis: (calc(100% - 60px) / 2);
+}
 }
 
 
@@ -391,6 +430,12 @@ border-radius: 6px;
         margin-bottom: 0;
     }
 }
+@media (min-width: 1024px) {
+    .section-title {
+        /* flex-grow: 0.4; */
+    }
+}
+
 
 .research-list,
 .doctor-list {
@@ -403,15 +448,18 @@ border-radius: 6px;
     .research-list,
     .doctor-list {
         flex-wrap: nowrap;
-    }
-}
-
-@media (min-width: 768px) {
-    .research-list,
-    .doctor-list {
         padding-bottom: 40px;
     }
 }
+
+@media (min-width: 1024px) {
+    .research-list,
+        .doctor-list {
+    padding-bottom: 10px;
+    }
+}
+
+
 
 .research-item,
 .doctor-item {
@@ -430,8 +478,8 @@ border-radius: 6px;
 @media (min-width: 1024px) {
     .research-item,
     .doctor-item {
-        font-size: 20px;
-        min-width: 450px;
+        font-size: 20px;       
+        min-height: 50px;
     }
 }
 
@@ -502,6 +550,13 @@ border-radius: 6px;
     padding-right: 12px;
     display: block;
     margin: 20px auto 20px;
+}
+@media (min-width: 1024px) {
+    .question-button {
+        height: 50px;
+        min-width: 350px;
+        font-size: 18px;
+    }
 }
 
 
@@ -1105,6 +1160,8 @@ border-radius: 6px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 /* 2 сторінка */
 
 .gallery {
@@ -1154,3 +1211,4 @@ border-radius: 6px;
 .photo {
 border-radius: 6px;
 }
+
