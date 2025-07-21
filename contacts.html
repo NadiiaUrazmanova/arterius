@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="./js/script.js" defer></script>
+
 </head>
 
 <body>
@@ -71,38 +71,35 @@
         <section class="contacts">
             <div class="container">
                 <div class="contacts-container">
-                    <iframe
+                    <iframe class="contacts-frame"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.1923995987754!2d30.726779275859666!3d46.48450256478814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631942570f7b5%3A0x3eb26d3c02ad0e74!2z0LLRg9C70LjRhtGPINCf0LDQstC70LAg0JfQtdC70LXQvdC-0LPQviwgNDEsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1suk!2sua!4v1751274752412!5m2!1suk!2sua"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                    <ul>
-                        <li>
-                            <address class="header-item">
-                                <svg class="header-item-svg geo-svg">
+                    <ul class="contacts-list">
+                        <li class="contacts-item">
+                            <address class="contacts-address">
+                                <!-- <svg class="contacts-item-svg geo-svg">
                                     <use href="./icons/icons.svg#icon-map">
                                     </use>
-                                </svg>
-                                <a href="#map" id="openMapModal">
-                                    <span>адреса:<br>
-                                        м.Одеса,<br> вул. П.Зеленого (Коблевська),41</span>
-                                </a>
+                                </svg> -->
+                                <!-- <a href="#map" id="openMapModal"></a> -->
+                                <span>адреса:<br>
+                                    м.Одеса,<br> вул. П.Зеленого (Коблевська),41</span>
+
                             </address>
                         </li>
-                        <li>
-                            <p class="contacts-heading">Телефони для запису та консультації</p>
-                            <ul class="tel-list">
+                        <li class="contacts-item">
+                            <p class="contacts-head">Телефони для запису та консультації:</p>
+                            <ul class="contacts-tel-list">
                                 <li><a class="tel-link" href="tel:+380975004214">(097) 500-42-14</a></li>
                                 <li><a class="tel-link" href="tel:+380930309747">(093) 030-97-47</a></li>
                                 <li><a class="tel-link" href="tel:+380487877965">(048) 787-79-65</a></li>
                                 <li><a class="tel-link" href="tel:+380669634017">(066) 963-40-17</a></li>
                             </ul>
                         </li>
-
                     </ul>
-
-
                 </div>
+                <button id="openModalQ" class="question-button" type="button">Задайте запитання лікарю</button>
         </section>
 
 
@@ -131,6 +128,170 @@
         </div>
 
     </footer>
+
+
+
+
+    <div class="map-modal-overlay" id="mapModal">
+        <div class="modal map-modal">
+            <button class="modal-close-button" id="closeMapModal" type="button">✖</button>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.1923995987754!2d30.726779275859666!3d46.48450256478814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631942570f7b5%3A0x3eb26d3c02ad0e74!2z0LLRg9C70LjRhtGPINCf0LDQstC70LAg0JfQtdC70LXQvdC-0LPQviwgNDEsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1suk!2sua!4v1751274752412!5m2!1suk!2sua"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="myModal">
+        <div class="modal">
+            <button class="modal-close-button" id="closeModal" type="button">
+                <svg class="modal-close" width="12" height="12">
+                    <use href="./icons/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <svg class="header-logo-svg">
+                        <use href="./icons/icons.svg#icon-logo">
+                        </use>
+                    </svg>
+                    <span class="header-logo-span">медичний центр</span>
+                </a>
+            </div>
+            <p class="modal-form-legend">Записатись на прийом</p>
+            <form class="modal-form" id="gform" name="user-form">
+
+                <div class="modal-form-list">
+                    <label class="modal-label" for="user-name">Прізвище та ім'я</label>
+                    <div class="modal-label-container">
+                        <input class="modal-input" id="user-name" type="text" name="user-name" required />
+                        <svg class="modal-label-icon" width="18" height="24">
+                            <use href="./icons/icons.svg#icon-person">
+                            </use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-list">
+                    <label class="modal-label" for="phone">Номер телефону (у форматі 380__-___-__-__)</label>
+                    <div class="modal-label-container">
+                        <input class="modal-input modal-input-phone" id="phone" type="tel" name="phone" required />
+                        <svg class="modal-label-icon" width="18" height="24">
+                            <use href="./icons/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-soc-checkbox">
+                    <p class="modal-form-choose-masseng">Оберіть, яким месенджером Вам зручніше користуватись</p>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                    </label>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                    </label>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                    </label>
+
+                </div>
+                <div class="modal-form-checkbox">
+                    <input class="visually-hidden modal-form-checkbox-input" type="checkbox" id="user-privacy"
+                        name="user-privacy" value="true" required />
+                    <label class="label-checkbox" for="user-privacy">
+                        </span>
+                        <span class="checkbox-text">Я даю згоду на обробку моїх персональних даних
+                        </span>
+                    </label>
+                </div>
+                <button class="modal-button" type="submit">Надіслати заявку на прийом
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="modal-overlay-question" id="myModalQ">
+        <div class="modal-question">
+            <button class="modal-close-button-question" id="closeModalQ" type="button">
+                <svg class="modal-close-question" width="8" height="8">
+                    <use href="./icons/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <svg class="header-logo-svg">
+                        <use href="./icons/icons.svg#icon-logo">
+                        </use>
+                    </svg>
+                    <span class="header-logo-span">медичний центр</span>
+                </a>
+            </div>
+            <p class="modal-form-legend-question">Задайте Ваше запитання</p>
+            <form class="modal-form-question" id="formQ" name="user-form-question">
+
+                <div class="modal-form-list-question">
+                    <label class="modal-label-question" for="user-nameQ">Прізвище та ім'я</label>
+                    <div class="modal-label-container-question">
+                        <input class="modal-input-question" id="user-nameQ" type="text" name="user-name" required />
+                        <svg class="modal-label-icon-question" width="18" height="24">
+                            <use href="./icons/icons.svg#icon-person">
+                            </use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="modal-form-list-question">
+                    <label class="modal-label-question" for="phone">Номер телефону (у форматі 380__-___-__-__)</label>
+                    <div class="modal-label-container-question">
+                        <input class="modal-input modal-input-phone-question" id="phoneQ" type="tel" name="phone"
+                            required />
+                        <svg class="modal-label-icon-question" width="18" height="24">
+                            <use href="./icons/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-soc-checkbox-question">
+                    <p class="modal-form-choose-masseng-question">Оберіть, яким месенджером Вам зручніше користуватись
+                    </p>
+                    <label class="modal-form-masseng-question">
+                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                    </label>
+                    <label class="modal-form-masseng-question">
+                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                    </label>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                    </label>
+
+                </div>
+
+                <div class="modal-form-list-question">
+                    <label class="modal-label-question" for="question"></label>
+                    <div class="modal-label-container-question">
+                        <textarea class="modal-input-question" id="question" name="question" rows="5"
+                            placeholder="Напишіть тут Ваше запитання">
+                                </textarea>
+                    </div>
+                </div>
+
+                <div class="modal-form-checkbox-question">
+                    <input class="visually-hidden modal-form-checkbox-input-question" type="checkbox" id="user-privacyQ"
+                        name="user-privacy" value="true" required />
+                    <label class="label-checkbox-question" for="user-privacy">
+
+                        <span class="checkbox-text-question">Я даю згоду на обробку моїх персональних даних
+                        </span>
+                    </label>
+                </div>
+                <button class="modal-button-question" type="submit">Надіслати запитання
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
