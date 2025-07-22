@@ -77,10 +77,30 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--fourth-color);
+    text-decoration-line: underline;
+}
+
+
+
 button {
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    color: var(--fourth-color);
+    background-color: var(--third-color);
+    border: 1px solid var(--fourth-color);
+}
+
+button:focus {
+    color: var(--fourth-color);
+    background-color: var(--third-color);
+    border: 1px solid var(--fourth-color);
 }
 
 img {
@@ -406,11 +426,13 @@ gap: 60px;
         max-width: 500px;
         align-self: flex-start;
         flex-basis: (calc(100% - 60px) / 2);
+        border-radius: 6px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 }
 
 .banner {
-border-radius: 6px;
+    border-radius: 6px;
 }
 
 
@@ -490,7 +512,8 @@ border-radius: 6px;
     background-color: var(--first-color);
     color: var(--second-color);
     padding: 10px;
-    border-radius: 6px;    
+    border-radius: 6px; 
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 768px) {
     .research-item,
@@ -508,12 +531,13 @@ border-radius: 6px;
 }
 
 .research-item {
-    position: relative;
+    position: relative;   
        
 }
 
 .research-content {
     transition: opacity 0.3s ease;
+    
 }
 
 
@@ -529,6 +553,7 @@ border-radius: 6px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    
 }
 .research-item:hover .research-content,
 .research-item:focus-within .research-content {
@@ -723,7 +748,7 @@ border-radius: 6px;
     width: 90%;
     min-height: 480px;
     border-radius: 4px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     padding: 40px 16px 24px 16px;
     position: absolute;
     top: 50%;
@@ -822,7 +847,7 @@ border-radius: 6px;
 .modal-input:focus {
     border-color: var(--fourth-color);
     border-radius: 4px;
-    box-shadow: 0 4px 4px 0 var(--first-color);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     outline: none;
 }
 
@@ -954,7 +979,7 @@ border-radius: 6px;
     width: 90%;
     min-height: 480px;
     border-radius: 4px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     padding: 40px 16px 24px 16px;
     position: absolute;
     top: 50%;
@@ -1058,7 +1083,7 @@ border-radius: 6px;
 .modal-input-question:focus {
     border-color: var(--fourth-color);
     border-radius: 4px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     outline: none;
 }
 
@@ -1105,7 +1130,7 @@ border-radius: 6px;
 .modal-textarea-question:focus-within {
     border-color: var(--first-color);
     border-radius: 4px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     outline: none;
 
 }
@@ -1233,6 +1258,8 @@ padding-bottom: 10px;
 
 .gallery-item {
     flex-basis: calc((100% - 24px) / 2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
 }
 @media (min-width: 768px) {
     .gallery-item {
@@ -1293,7 +1320,7 @@ border-radius: 6px;
     color: var(--second-color);
     border-radius: 6px;
     padding: 10px;
-    
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);    
 }
 
 @media (min-width: 768px) {
@@ -1328,6 +1355,7 @@ border-radius: 6px;
     transition: opacity 0.3s ease;
     z-index: 1;
     font-size: 14px;
+    width: 100%;
 }
 
 .section-research-item:hover>.section-research-content {
@@ -1340,28 +1368,39 @@ border-radius: 6px;
     pointer-events: auto;
 }
 
-.section-research-photo {
-    width: 180px;    
-    height: auto;
-    object-fit: contain;    
-}
-@media (min-width: 1024px) {
-    .section-research-photo {
-        width: 140px;;
-    }
-}
-
 .section-research-item-name {
     text-align: center;
 }
 
 .section-research-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 10px;
     padding-bottom: 10px;
-    gap: 10px;    
+    gap: 10px; 
+    justify-content: center;       
 }
+
+.section-research-photo {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+    .section-research-photo {
+        width: 140px;
+        ;
+    }
+}
+
+.section-research-paragraph {
+    max-width: 180px;
+}
+
+
+
 
 .section-research-block-inside {
     display: flex;
@@ -1370,9 +1409,7 @@ border-radius: 6px;
 /* .big-block {
 } */
 
-.research-photo {
-max-width: 300px;
-}
+
 
 /* лікарі */
 .doctors {
