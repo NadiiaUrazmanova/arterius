@@ -203,7 +203,7 @@ align-items: center;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;    
+    gap: 16px;        
 }
 
 
@@ -215,6 +215,7 @@ align-items: center;
     border: none;
     cursor: pointer;
     z-index: 900;
+    box-shadow: none;
 }
 @media (min-width: 768px) {
     .burger-button {
@@ -261,11 +262,12 @@ align-items: center;
         position: static;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         padding: 0;
         width: auto;
-        gap: 24px;
+        gap: 30px;
         background: none;
+        flex-grow: 1;
     }
 }
 
@@ -278,19 +280,20 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 12px;    
 }
 @media (min-width: 768px) {
     .header-nav-list {
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         gap: 16px;
     }
 }
 @media (min-width: 1024px) {
     .header-nav-list {               
-        gap: 12px;        
-        justify-content: space-between;
+        gap: 12px;
+        flex-grow: 1;
     }
 }
 
@@ -301,12 +304,6 @@ align-items: center;
     color: var(--second-color);
 }
 
-.header-nav-block {
-    display: flex;
-    flex-direction: row;
-    gap:12px;
-    align-items: center;
-}
 
 
 .header-nav-button {
@@ -318,11 +315,7 @@ align-items: center;
     border-radius: 15px;
     text-transform: uppercase;
 }
-@media (min-width: 768px) {
-    .header-nav-button {
-        /* margin-left: auto; */
-    }
-}
+
 
 @media (min-width: 1024px) {
     .header-nav-button {
@@ -638,7 +631,7 @@ gap: 60px;
     padding-bottom: 12px;
 }
 @media (min-width: 768px) {
-    .footer-tel-shadule {
+    .footer-tel-shedule {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -738,7 +731,7 @@ gap: 60px;
 }
 
 .modal-overlay:not(.is-open) .modal {
-    transform: translate(-50%, -50%) scale 1.5;
+    transform: translate(-50%, -50%) scale (1.5);
 
 }
 
@@ -969,7 +962,7 @@ gap: 60px;
 }
 
 .modal-overlay-question:not(.is-open) .modal {
-    transform: translate(-50%, -50%) scale 1.5;
+    transform: translate(-50%, -50%) scale (1.5);
 
 }
 
@@ -1398,7 +1391,16 @@ border-radius: 6px;
 .section-research-paragraph {
     max-width: 180px;
 }
+.zoomable {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
 
+.zoomable.zoomed {
+    transform: scale(3);
+    z-index: 10;
+    position: relative;
+}
 
 
 

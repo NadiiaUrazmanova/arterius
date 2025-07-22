@@ -115,3 +115,18 @@ window.onclick = (e) => {
     modalQ.classList.remove("is-open");
   }
 };
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".zoomable");
+
+  images.forEach((img) => {
+    img.addEventListener("click", () => {
+      img.classList.add("zoomed");
+    });
+
+    img.addEventListener("mouseleave", () => {
+      img.classList.remove("zoomed");
+    });
+  });
+});

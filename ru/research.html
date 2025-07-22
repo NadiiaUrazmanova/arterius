@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arterius</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <svg class="header-logo-svg">
+                        <use href="../icons/icons.svg#icon-logo">
+                        </use>
+                    </svg>
+                    <span class="header-logo-span">медицинский центр</span>
+                </a>
+            </div>
+
+            <address class="header-item">
+                <svg class="header-item-svg geo-svg">
+                    <use href="../icons/icons.svg#icon-map">
+                    </use>
+                </svg>
+
+                <a class="header-ad-link" href="#map" id="openMapModal">
+                    <span class="header-ad-span">адрес:</span>
+                    <span class="header-ad-span">г. Одесса,</span> <span class="header-ad-span">ул. П. Зеленого</span>
+                    <span class="header-ad-span">(Коблевская), 41</span>
+                </a>
+            </address>
+        </div>
+        <nav class="container header-nav">
+            <button class="burger-button" aria-label="Меню">
+                <div class="burger-lines">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <span class="burger-arrow">&larr; меню</span>
+            </button>
+            <div class="header-nav-wrapper">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./index.html">Главная</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./gallery.html">Галерея</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./research.html">Обследования</a>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./doctors.html">Врачи</a></li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./info.html">Полезная
+                            информация</a>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-item-link" href="./contacts.html">Контакты</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="lang" href="../research.html">Укр</a>
+                    </li>
+                </ul>
+            </div>
+            <button id="openModal" class="header-nav-button" type="button">Записаться</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="research">
+            <div class="container">
+                <h2 class="section-title">УЗИ детям и взрослым</h2>
+                <ul class="section-research-list">
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ головы (НСГ, доплер, дуплекс)</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ головы (НСГ, доплер, дуплекс)</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/dopler-ru.jpg" alt="dopler" />
+                                <img class="section-research-photo  zoomable" src="../img/nsg.jpg"
+                                    alt="neurosonography" />
+                                <p class="section-research-paragraph">
+                                    НСГ – нейросонография для детей до 1–2 лет. Показания: после выписки из роддома, при
+                                    отклонениях во время беременности и родов (естественных или кесаревом сечении).
+                                    Проверка
+                                    перед
+                                    вакцинацией. Контроль развития и созревания ребёнка до 2 лет. Жалобы, плохой сон,
+                                    срыгивание,
+                                    травмы головы, рвота, бледность носогубного треугольника, бледность кожи лица,
+                                    изменение
+                                    формы
+                                    черепа (кефалогематома и др.), повышенная возбудимость, вставание на цыпочки,
+                                    несвоевременное
+                                    удержание головы, сидение, вставание на ноги, тремор, судороги, потеря сознания.<br>
+                                    ТУС — транскраниальное УЗИ до 16 лет.<br>
+                                    Доплер — определение скорости кровотока у детей и взрослых.<br>
+                                    Дуплекс — определение свойств кровотока и 3D-визуализация сосудов. Показания: тремор
+                                    рук,
+                                    судороги, потеря сознания.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ слюнных желез</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ слюнных желез</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi_slun.jpg"
+                                    alt="ultrasound-salivary-glands" />
+                                <p class="section-research-paragraph">Показания: боль, отёчность слюнных желез,
+                                    наследственная
+                                    предрасположенность.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ вилочковой железы</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ вилочковой железы</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-vilochka.jpg"
+                                    alt="thymus gland" />
+                                <p class="section-research-paragraph">Показания: ослабленный иммунитет, частые простуды,
+                                    боль в
+                                    груди при кашле.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ щитовидной железы</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ щитовидной железы</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-shitovidka-rus.jpg"
+                                    alt="ultrasound-thyroid-gland" />
+                                <p class="section-research-paragraph">Показания: боль, першение в горле, кашель,
+                                    увеличение
+                                    области щитовидной железы, наследственная предрасположенность, перенесённая вирусная
+                                    инфекция.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ сердца</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ сердца</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-kard-rus.jpg"
+                                    alt="ultrasound-heart" />
+                                <p class="section-research-paragraph">Показания: боль и дискомфорт в сердце, тахикардия,
+                                    панические состояния, страх. Наследственность по стенокардии, инфаркту миокарда.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ брюшной полости</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ брюшной полости</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-bruhnaya-rus.jpg"
+                                    alt="ultrasound-abdomen" />
+                                <p class="section-research-paragraph">Показания: боль в животе, тошнота, рвота, изжога,
+                                    наличие
+                                    камней в желчном пузыре, подозрение на аппендицит. Наследственная
+                                    предрасположенность к
+                                    гастриту, язве.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ почек, доплер почек</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ почек, доплер почек</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-nyrky.jpg"
+                                    alt="kidneys" />
+                                <p class="section-research-paragraph">Показания: боль в пояснице, недавно перенесённая
+                                    простуда
+                                    с температурой, потемнение или кровь в моче, наследственная предрасположенность
+                                    (мочекаменная болезнь).</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ мочевого пузыря</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ мочевого пузыря</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-mochevoy-rus.jpg"
+                                    alt="ultrasound-bladder" />
+                                <p class="section-research-paragraph">Показания: боль внизу живота, недавно перенесённая
+                                    простуда, потемнение мочи, кровь в моче, наследственная предрасположенность
+                                    (мочекаменная
+                                    болезнь).</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ предстательной железы</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ предстательной железы</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-predstat.jpg"
+                                    alt="ultrasound-prostate" />
+                                <p class="section-research-paragraph">Показания: затруднённое мочеиспускание, учащённое
+                                    мочеиспускание, боли при мочеиспускании, наследственная предрасположенность.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ мошонки</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ мошонки</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-moshonka.jpg"
+                                    alt="scrotum" />
+                                <p class="section-research-paragraph">Показания: боль, отёк, покраснение мошонки,
+                                    изменение
+                                    размера яичек, проблемы с эрекцией, подростковый возраст.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ мягких тканей (головы, рук, ног, тела)</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ мягких тканей (головы, рук, ног, тела)</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-miaki-tkanyny.jpg"
+                                    alt="soft-tissues" />
+                                <p class="section-research-paragraph">Показания: травмы, отёки, уплотнения, воспаления,
+                                    подозрение на опухоли, а также контроль после операций.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ коленного сустава</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ коленного сустава</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-kolino-rus.jpg"
+                                    alt="knee-joint" />
+                                <p class="section-research-paragraph">Показания: травмы, воспалительные и дегенеративные
+                                    процессы, боль, отёчность, ограничение подвижности, хруст, щелчки, артрит, артроз,
+                                    контроль
+                                    после лечения и операций.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ сосудов (доплер, дуплекс) верхних конечностей</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ сосудов головы и верхних конечностей (доплер,
+                                дуплекс)</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-verhni-kincivky.jpg"
+                                    alt="upper-extremities" />
+                                <p class="section-research-paragraph">Показания: отёки, боль, онемение, судороги,
+                                    тяжесть в
+                                    руках, подозрение на варикоз, тромбоз, атеросклероз, а также после травм или
+                                    операций.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>УЗИ сосудов (доплер, дуплекс) нижних конечностей</p>
+                            <p>Стоимость — 500 грн.</p>
+                        </div>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">УЗИ сосудов нижних конечностей (доплер, дуплекс)</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo  zoomable" src="../img/uzi-nyjnikincivky.jpg"
+                                    alt="lower-extremities" />
+                                <p class="section-research-paragraph">Показания: боль в ногах, отёки, тяжесть, онемение,
+                                    покалывание, судороги, изменение цвета кожи, варикоз, язвы, трофические изменения.
+                                    Рекомендовано при диабете, гипертонии, после инфаркта, инсульта, операций на
+                                    сосудах.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button id="openModalQ" class="question-button" type="button">Задайте вопрос врачу</button>
+        </section>
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-tel-shedule">
+                <div class="footer-contacts">
+                    <p class="footer-contacts-heading">Телефоны для записи и консультаций</p>
+                    <ul class="footer-tel-list">
+                        <li><a class="footer-tel-link" href="tel:+380975004214">(097) 500-42-14</a></li>
+                        <li><a class="footer-tel-link" href="tel:+380930309747">(093) 030-97-47</a></li>
+                        <li><a class="footer-tel-link" href="tel:+380487877965">(048) 787-79-65</a></li>
+                        <li><a class="footer-tel-link" href="tel:+380669634017">(066) 963-40-17</a></li>
+                    </ul>
+                </div>
+                <div class="footer-shedule">
+                    <span class="footer-span">график работы</span>
+                    <span>9:00 - 16:00 ежедневно</span>
+                    <span>воскресенье — выходной</span>
+                </div>
+            </div>
+            <span>Приказ МОЗ Украины от 25.03.2024 № 502 "О лицензировании медицинской практики"</span>
+        </div>
+    </footer>
+
+    <div class="map-modal-overlay" id="mapModal">
+        <div class="modal map-modal">
+            <button class="modal-close-button" id="closeMapModal" type="button">✖</button>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.1923995987754!2d30.726779275859666!3d46.48450256478814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631942570f7b5%3A0x3eb26d3c02ad0e74!2z0LLRg9C70LjRhtGPINCf0LDQstC70LAg0JfQtdC70LXQvdC-0LPQviwgNDEsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1suk!2sua!4v1751274752412!5m2!1suk!2sua"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="myModal">
+        <div class="modal">
+            <button class="modal-close-button" id="closeModal" type="button">
+                <svg class="modal-close" width="12" height="12">
+                    <use href="../icons/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="logo">
+                <span class="logo-link">
+                    <svg class="header-logo-svg">
+                        <use href="../icons/icons.svg#icon-logo"></use>
+                    </svg>
+                    <span class="header-logo-span">медицинский центр</span>
+                </span>
+            </div>
+            <p class="modal-form-legend">Записаться на приём</p>
+            <form class="modal-form" id="gform" name="user-form">
+                <div class="modal-form-list">
+                    <label class="modal-label" for="user-name">Фамилия и имя</label>
+                    <div class="modal-label-container">
+                        <input class="modal-input" id="user-name" type="text" name="user-name" required />
+                        <svg class="modal-label-icon" width="18" height="24">
+                            <use href="../icons/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-list">
+                    <label class="modal-label" for="phone">Номер телефона (в формате 380__-___-__-__)</label>
+                    <div class="modal-label-container">
+                        <input class="modal-input modal-input-phone" id="phone" type="tel" name="phone" required />
+                        <svg class="modal-label-icon" width="18" height="24">
+                            <use href="../icons/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-soc-checkbox">
+                    <p class="modal-form-choose-masseng">Выберите мессенджер, которым вам удобнее пользоваться</p>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                    </label>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                    </label>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                    </label>
+                </div>
+                <div class="modal-form-checkbox">
+                    <input class="visually-hidden modal-form-checkbox-input" type="checkbox" id="user-privacy"
+                        name="user-privacy" value="true" required />
+                    <label class="label-checkbox" for="user-privacy">
+                        <span class="checkbox-text">Я даю согласие на обработку моих персональных данных</span>
+                    </label>
+                </div>
+                <button class="modal-button" type="submit">Отправить заявку на приём</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay-question" id="myModalQ">
+        <div class="modal-question">
+            <button class="modal-close-button-question" id="closeModalQ" type="button">
+                <svg class="modal-close-question" width="8" height="8">
+                    <use href="../icons/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="logo">
+                <span class="logo-link">
+                    <svg class="header-logo-svg">
+                        <use href="../icons/icons.svg#icon-logo"></use>
+                    </svg>
+                    <span class="header-logo-span">медицинский центр</span>
+                </span>
+            </div>
+            <p class="modal-form-legend-question">Задайте ваш вопрос</p>
+            <form class="modal-form-question" id="formQ" name="user-form-question">
+                <div class="modal-form-list-question">
+                    <label class="modal-label-question" for="user-nameQ">Фамилия и имя</label>
+                    <div class="modal-label-container-question">
+                        <input class="modal-input-question" id="user-nameQ" type="text" name="user-name" required />
+                        <svg class="modal-label-icon-question" width="18" height="24">
+                            <use href="../icons/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-list-question">
+                    <label class="modal-label-question" for="phone">Номер телефона (в формате 380__-___-__-__)</label>
+                    <div class="modal-label-container-question">
+                        <input class="modal-input modal-input-phone-question" id="phoneQ" type="tel" name="phone"
+                            required />
+                        <svg class="modal-label-icon-question" width="18" height="24">
+                            <use href="../icons/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-soc-checkbox-question">
+                    <p class="modal-form-choose-masseng-question">Выберите мессенджер, которым вам удобнее пользоваться
+                    </p>
+                    <label class="modal-form-masseng-question">
+                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                    </label>
+                    <label class="modal-form-masseng-question">
+                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                    </label>
+                    <label class="modal-form-masseng">
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                    </label>
+                </div>
+                <div class="modal-form-list-question">
+                    <label class="modal-label-question" for="question"></label>
+                    <div class="modal-label-container-question">
+                        <textarea class="modal-input-question" id="question" name="question" rows="5"
+                            placeholder="Напишите здесь ваш вопрос"></textarea>
+                    </div>
+                </div>
+                <div class="modal-form-checkbox-question">
+                    <input class="visually-hidden modal-form-checkbox-input-question" type="checkbox" id="user-privacyQ"
+                        name="user-privacy" value="true" required />
+                    <label class="label-checkbox-question" for="user-privacy">
+                        <span class="checkbox-text-question">Я даю согласие на обработку моих персональных данных</span>
+                    </label>
+                </div>
+                <button class="modal-button-question" type="submit">Отправить вопрос</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
