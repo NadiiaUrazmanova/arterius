@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Arterius — сучасна медична клініка. Запис на прийом, інформація про лікарів та обстеження.">
+
     <title>Arterius</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
 
 </head>
 
@@ -44,11 +48,11 @@
         </div>
         <nav class="container header-nav">
             <button class="burger-button" aria-label="Меню">
-                <div class="burger-lines">
+                <span class="burger-lines">
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
-                </div>
+                </span>
                 <span class="burger-arrow">&larr; меню</span>
             </button>
             <div class="header-nav-wrapper">
@@ -183,7 +187,7 @@
             <button class="modal-close-button" id="closeMapModal" type="button">✖</button>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.1923995987754!2d30.726779275859666!3d46.48450256478814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631942570f7b5%3A0x3eb26d3c02ad0e74!2z0LLRg9C70LjRhtGPINCf0LDQstC70LAg0JfQtdC70LXQvdC-0LPQviwgNDEsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1suk!2sua!4v1751274752412!5m2!1suk!2sua"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
@@ -211,7 +215,7 @@
                 <div class="modal-form-list">
                     <label class="modal-label" for="user-name">Прізвище та ім'я</label>
                     <div class="modal-label-container">
-                        <input class="modal-input" id="user-name" type="text" name="user-name" required />
+                        <input class="modal-input" id="user-name" type="text" name="user-name" required>
                         <svg class="modal-label-icon" width="18" height="24">
                             <use href="./icons/icons.svg#icon-person">
                             </use>
@@ -221,7 +225,7 @@
                 <div class="modal-form-list">
                     <label class="modal-label" for="phone">Номер телефону (у форматі 380__-___-__-__)</label>
                     <div class="modal-label-container">
-                        <input class="modal-input modal-input-phone" id="phone" type="tel" name="phone" required />
+                        <input class="modal-input modal-input-phone" id="phone" type="tel" name="phone" required>
                         <svg class="modal-label-icon" width="18" height="24">
                             <use href="./icons/icons.svg#icon-phone"></use>
                         </svg>
@@ -230,21 +234,20 @@
                 <div class="modal-form-soc-checkbox">
                     <p class="modal-form-choose-masseng">Оберіть, яким месенджером Вам зручніше користуватись</p>
                     <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                        <input type="checkbox" name="soc-checkbox" value="Telegram">Telegram
                     </label>
                     <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                        <input type="checkbox" name="soc-checkbox" value="Viber">Viber
                     </label>
                     <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp">WhatsApp
                     </label>
 
                 </div>
                 <div class="modal-form-checkbox">
                     <input class="visually-hidden modal-form-checkbox-input" type="checkbox" id="user-privacy"
-                        name="user-privacy" value="true" required />
+                        name="user-privacy" value="true" required>
                     <label class="label-checkbox" for="user-privacy">
-                        </span>
                         <span class="checkbox-text">Я даю згоду на обробку моїх персональних даних
                         </span>
                     </label>
@@ -279,7 +282,7 @@
                 <div class="modal-form-list-question">
                     <label class="modal-label-question" for="user-nameQ">Прізвище та ім'я</label>
                     <div class="modal-label-container-question">
-                        <input class="modal-input-question" id="user-nameQ" type="text" name="user-name" required />
+                        <input class="modal-input" id="user-nameQ" type="text" name="user-name" required>
                         <svg class="modal-label-icon-question" width="18" height="24">
                             <use href="./icons/icons.svg#icon-person">
                             </use>
@@ -291,23 +294,23 @@
                     <label class="modal-label-question" for="phone">Номер телефону (у форматі 380__-___-__-__)</label>
                     <div class="modal-label-container-question">
                         <input class="modal-input modal-input-phone-question" id="phoneQ" type="tel" name="phone"
-                            required />
+                            required>
                         <svg class="modal-label-icon-question" width="18" height="24">
                             <use href="./icons/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="modal-form-soc-checkbox-question">
+                <div class="modal-form-soc-checkbox">
                     <p class="modal-form-choose-masseng-question">Оберіть, яким месенджером Вам зручніше користуватись
                     </p>
                     <label class="modal-form-masseng-question">
-                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                        <input type="checkbox" name="soc-checkbox" value="Telegram">Telegram
                     </label>
                     <label class="modal-form-masseng-question">
-                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                        <input type="checkbox" name="soc-checkbox" value="Viber">Viber
                     </label>
-                    <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                    <label class="modal-form-masseng-question">
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp">WhatsApp
                     </label>
 
                 </div>
@@ -316,15 +319,14 @@
                     <label class="modal-label-question" for="question"></label>
                     <div class="modal-label-container-question">
                         <textarea class="modal-input-question" id="question" name="question" rows="5"
-                            placeholder="Напишіть тут Ваше запитання">
-                        </textarea>
+                            placeholder="Напишіть тут Ваше запитання"></textarea>
                     </div>
                 </div>
 
                 <div class="modal-form-checkbox-question">
                     <input class="visually-hidden modal-form-checkbox-input-question" type="checkbox" id="user-privacyQ"
-                        name="user-privacy" value="true" required />
-                    <label class="label-checkbox-question" for="user-privacy">
+                        name="user-privacy" value="true" required>
+                    <label class="label-checkbox-question" for="user-privacyQ">
 
                         <span class="checkbox-text-question">Я даю згоду на обробку моїх персональних даних
                         </span>
