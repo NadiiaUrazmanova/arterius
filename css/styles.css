@@ -294,6 +294,7 @@ align-items: center;
     .header-nav-list {               
         gap: 12px;
         flex-grow: 1;
+        margin-right: 30px;
     }
 }
 
@@ -332,6 +333,7 @@ align-items: center;
 .first-page {
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 @media (min-width: 768px) {
     .first-page {
@@ -433,16 +435,24 @@ gap: 60px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    gap: 30px;
 }
 
 @media (min-width: 1024px) {
 .research-doctor-section {
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 30px;
-    flex-basis: (calc(100% - 60px) / 2);
+    gap: 100px;
+    }
 }
+
+.doctor-main-list
+ {
+ flex-grow: 0.5;
+ 
+}
+.research-main-list {
+flex-grow: 0.8;
 }
 
 
@@ -464,10 +474,7 @@ gap: 60px;
     }
 }
 
-.doctor-main-list {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 @media (min-width: 768px) {
     .doctor-main-list {
         margin-top: 0;
@@ -486,15 +493,7 @@ gap: 60px;
 @media (min-width: 768px) {
     .research-list,
     .doctor-list {
-        flex-wrap: nowrap;
-        padding-bottom: 40px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .research-list,
-        .doctor-list {
-    padding-bottom: 10px;
+        flex-wrap: nowrap;        
     }
 }
 
@@ -559,19 +558,33 @@ gap: 60px;
     pointer-events: auto;
 }
 
+.news-item-heading {
 
-.news {
-    margin-bottom: 20px;
+}
+
+.news-item-text {
+    font-size: 16px;
+    margin-bottom: 6px;
 }
 @media (min-width: 768px) {
-    .news {
-        margin-bottom: 40px;
+    .news-item-text {
+        font-size: 16px;
     }
 }
+
 @media (min-width: 1024px) {
-    .news {
-        margin-bottom: 60px;
+    .news-item-text {
+        font-size: 20px;        
     }
+}
+
+
+@media (min-width: 1024px) {
+.news-button-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;     */
+}
 }
 
 .news-container {
@@ -579,6 +592,14 @@ gap: 60px;
     border-radius: 6px;    
     padding: 10px;    
 }
+@media (min-width: 1024px) {
+    .news-container {
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+
 
 .question-button {
     color: var(--second-color);
@@ -737,7 +758,7 @@ gap: 60px;
 
 .modal {
     background-color: #FCFCFC;
-    max-width: 400px;
+    max-width: 500px;
     width: 90%;
     min-height: 480px;
     border-radius: 4px;
@@ -749,6 +770,7 @@ gap: 60px;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .modal-close-button {
     position: absolute;
@@ -811,7 +833,7 @@ gap: 60px;
 
 
 .modal-label {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -835,7 +857,7 @@ gap: 60px;
     padding-left: 38px;
     outline: transparent;
     color: var(--first-color);
-    font-size: 14px;
+    font-size: 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -869,7 +891,7 @@ gap: 60px;
 .modal-form-choose-masseng {
     color: var(--first-color);
     margin-bottom: 6px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -880,7 +902,7 @@ gap: 60px;
 .modal-form-masseng {
     color: var(--first-color);
     margin-bottom: 8px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;    
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -951,7 +973,7 @@ gap: 60px;
 
 
 .label-checkbox {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--first-color);
@@ -1017,7 +1039,7 @@ gap: 60px;
 
 .modal-button {
     display: block;
-    min-width: 169px;
+    min-width: 250px;
     height: 56px;
     margin-left: auto;
     margin-right: auto;
@@ -1064,7 +1086,7 @@ gap: 60px;
 
 .modal-question {
     background-color: #FCFCFC;
-    max-width: 400px;
+    max-width: 500px;
     width: 90%;
     min-height: 480px;
     border-radius: 4px;
@@ -1141,7 +1163,7 @@ gap: 60px;
 
 
 .modal-label-question {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -1167,7 +1189,7 @@ gap: 60px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
     color: var(--first-color);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .modal-input-question:focus {
@@ -1183,7 +1205,7 @@ gap: 60px;
 
 .modal-input-question::placeholder {
     color: var(--first-color);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .modal-label-icon-question {
@@ -1204,7 +1226,7 @@ gap: 60px;
 .modal-textarea-question {
     width: 100%;
     height: 120px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--first-color);
@@ -1228,7 +1250,7 @@ gap: 60px;
 .modal-form-choose-masseng-question {
     color: var(--first-color);
     margin-bottom: 8px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -1238,7 +1260,7 @@ gap: 60px;
 
 .modal-form-masseng-question {
     color: var(--first-color);
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -1305,7 +1327,7 @@ gap: 60px;
     border: 0;
 }
 .label-checkbox-question {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--first-color);
@@ -1368,7 +1390,7 @@ gap: 60px;
 
 .modal-button-question {
     display: block;
-    min-width: 169px;
+    min-width: 200px;
     height: 56px;
     margin-left: auto;
     margin-right: auto;
@@ -1530,9 +1552,16 @@ border-radius: 6px;
     pointer-events: none;
     transition: opacity 0.3s ease;
     z-index: 1;
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
 }
+@media (min-width: 1024px) {
+.section-research-item-text {
+    font-size: 18px;
+    }
+}
+
+
 
 .section-research-item:hover>.section-research-content {
     opacity: 0;
