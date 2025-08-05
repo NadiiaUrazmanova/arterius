@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Arterius — сучасна медична клініка, УЗД. Запис на прийом, інформація про лікарів та обстеження.">
+
     <title>Arterius</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
 
 </head>
 
@@ -34,9 +38,10 @@
                     <use href="./icons/icons.svg#icon-map" alt="geolocation" width="20" height="20">
                     </use>
                 </svg>
-                <a href="#map" id="openMapModal">
-                    <span>адреса:<br>
-                        м.Одеса,<br> вул. П.Зеленого (Коблевська),41</span>
+                <a class="header-ad-link" href="#map" id="openMapModal">
+                    <span class="header-ad-span">адреса:</span>
+                    <span class="header-ad-span">м.Одеса,</span> <span class="header-ad-span">вул. П.Зеленого</span>
+                    <span class="header-ad-span">(Коблевська),41</span>
                 </a>
             </address>
         </div>
@@ -92,6 +97,24 @@
                                 <li><a class="tel-link" href="tel:+380669634017">(066) 963-40-17</a></li>
                             </ul>
                         </li>
+                        <li class="contacts-link">
+                            <a class="contacts-link-item" href="https://t.me/Arteriusa">
+                                <svg class="contacts-link-svg" width="20" height="20">
+                                    <use href="./icons/icons.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-link-item" href="viber://chat?number=%2B380975004214">
+                                <svg class="contacts-link-svg" width="20" height="20">
+                                    <use href="./icons/icons.svg#icon-viber"></use>
+                                </svg>
+                            </a>
+                            <a class="contacts-link-item" href="https://wa.me/380975004214">
+                                <svg class="contacts-link-svg" width="20" height="20">
+                                    <use href="./icons/icons.svg#icon-whatsapp"></use>
+                                </svg>
+                            </a>
+                            <span>(097) 500-42-14</span>
+                        </li>
                     </ul>
                 </div>
                 <button id="openModalQ" class="question-button" type="button">Задайте запитання лікарю</button>
@@ -132,7 +155,7 @@
             <button class="modal-close-button" id="closeMapModal" type="button">✖</button>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.1923995987754!2d30.726779275859666!3d46.48450256478814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631942570f7b5%3A0x3eb26d3c02ad0e74!2z0LLRg9C70LjRhtGPINCf0LDQstC70LAg0JfQtdC70LXQvdC-0LPQviwgNDEsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1suk!2sua!4v1751274752412!5m2!1suk!2sua"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
@@ -193,7 +216,7 @@
                     <input class="visually-hidden modal-form-checkbox-input" type="checkbox" id="user-privacy"
                         name="user-privacy" value="true" required />
                     <label class="label-checkbox" for="user-privacy">
-                        </span>
+
                         <span class="checkbox-text">Я даю згоду на обробку моїх персональних даних
                         </span>
                     </label>

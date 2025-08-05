@@ -670,8 +670,14 @@ flex-grow: 0.8;
 .footer-tel-link {
     color: var(--second-color);
 }
-
-
+.footer-payment {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+}
+.footer-moz {
+    align-self: center;
+}
 
 
 
@@ -1591,6 +1597,7 @@ border-radius: 6px;
     width: 180px;
     height: auto;
     object-fit: contain;
+    /* float: left; */
 }
 
 @media (min-width: 1024px) {
@@ -1797,3 +1804,17 @@ border: 0;
     gap: 4px;
 }
 
+.contacts-link {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-content: center;
+}
+
+.contacts-link-svg {
+    fill: var(--first-color);
+}
+.contacts-link-svg:hover,
+.contacts-link-svg:focus {
+    fill: var(--fourth-color);
+}
