@@ -26,7 +26,7 @@
             <div class="logo">
                 <a href="index.html" class="logo-link">
                     <svg class="header-logo-svg">
-                        <use href="./icons/icons.svg#icon-logo" alt="Arterius Logo" width="120" height="20">
+                        <use href="./icons/icons.svg#icon-logo">
                         </use>
                     </svg>
                     <span class="header-logo-span">медичний центр</span>
@@ -35,9 +35,10 @@
 
             <address class="header-item">
                 <svg class="header-item-svg geo-svg">
-                    <use href="./icons/icons.svg#icon-map" alt="geolocation" width="20" height="20">
+                    <use href="./icons/icons.svg#icon-map">
                     </use>
                 </svg>
+
                 <a class="header-ad-link" href="#map" id="openMapModal">
                     <span class="header-ad-span">адреса:</span>
                     <span class="header-ad-span">м.Одеса,</span> <span class="header-ad-span">вул. П.Зеленого</span>
@@ -47,11 +48,11 @@
         </div>
         <nav class="container header-nav">
             <button class="burger-button" aria-label="Меню">
-                <div class="burger-lines">
+                <span class="burger-lines">
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
-                </div>
+                </span>
                 <span class="burger-arrow">&larr; меню</span>
             </button>
             <div class="header-nav-wrapper">
@@ -68,9 +69,11 @@
                     </li>
                 </ul>
             </div>
+
             <button id="openModal" class="header-nav-button" type="button">Записатись</button>
         </nav>
     </header>
+
 
     <main>
         <section class="doctors">
@@ -144,12 +147,20 @@
                         <li><a class="footer-tel-link" href="tel:+380669634017">(066) 963-40-17</a></li>
                     </ul>
                 </div>
+                <div class="footer-payment">
+                    <span>Доступні способи оплати:</span>
+                    <span>готівка,</span>
+                    <span>банківський переказ</span>
+                    <span> платіжний чек.</span>
+                </div>
                 <div class="footer-shedule"><span class="footer-span">графік роботи</span>
                     <span>9:00 - 16:00 щодня</span>
                     <span>неділя вихідний</span>
                 </div>
             </div>
-            <span>Наказ МОЗ України від 25.03.2024 № 502 "Про ліцензування медичної практики"</span>
+            <span class="footer-moz">Наказ МОЗ України від 25.03.2024 № 502 "Про ліцензування медичної практики"</span>
+
+
         </div>
 
     </footer>
@@ -187,7 +198,7 @@
                 <div class="modal-form-list">
                     <label class="modal-label" for="user-name">Прізвище та ім'я</label>
                     <div class="modal-label-container">
-                        <input class="modal-input" id="user-name" type="text" name="user-name" required />
+                        <input class="modal-input" id="user-name" type="text" name="user-name" required>
                         <svg class="modal-label-icon" width="18" height="24">
                             <use href="./icons/icons.svg#icon-person">
                             </use>
@@ -197,7 +208,7 @@
                 <div class="modal-form-list">
                     <label class="modal-label" for="phone">Номер телефону (у форматі 380__-___-__-__)</label>
                     <div class="modal-label-container">
-                        <input class="modal-input modal-input-phone" id="phone" type="tel" name="phone" required />
+                        <input class="modal-input modal-input-phone" id="phone" type="tel" name="phone" required>
                         <svg class="modal-label-icon" width="18" height="24">
                             <use href="./icons/icons.svg#icon-phone"></use>
                         </svg>
@@ -206,19 +217,19 @@
                 <div class="modal-form-soc-checkbox">
                     <p class="modal-form-choose-masseng">Оберіть, яким месенджером Вам зручніше користуватись</p>
                     <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                        <input type="checkbox" name="soc-checkbox" value="Telegram">Telegram
                     </label>
                     <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                        <input type="checkbox" name="soc-checkbox" value="Viber">Viber
                     </label>
                     <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp">WhatsApp
                     </label>
 
                 </div>
                 <div class="modal-form-checkbox">
                     <input class="visually-hidden modal-form-checkbox-input" type="checkbox" id="user-privacy"
-                        name="user-privacy" value="true" required />
+                        name="user-privacy" value="true" required>
                     <label class="label-checkbox" for="user-privacy">
                         <span class="checkbox-text">Я даю згоду на обробку моїх персональних даних
                         </span>
@@ -254,7 +265,7 @@
                 <div class="modal-form-list-question">
                     <label class="modal-label-question" for="user-nameQ">Прізвище та ім'я</label>
                     <div class="modal-label-container-question">
-                        <input class="modal-input-question" id="user-nameQ" type="text" name="user-name" required />
+                        <input class="modal-input" id="user-nameQ" type="text" name="user-name" required>
                         <svg class="modal-label-icon-question" width="18" height="24">
                             <use href="./icons/icons.svg#icon-person">
                             </use>
@@ -266,23 +277,23 @@
                     <label class="modal-label-question" for="phone">Номер телефону (у форматі 380__-___-__-__)</label>
                     <div class="modal-label-container-question">
                         <input class="modal-input modal-input-phone-question" id="phoneQ" type="tel" name="phone"
-                            required />
+                            required>
                         <svg class="modal-label-icon-question" width="18" height="24">
                             <use href="./icons/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="modal-form-soc-checkbox-question">
+                <div class="modal-form-soc-checkbox">
                     <p class="modal-form-choose-masseng-question">Оберіть, яким месенджером Вам зручніше користуватись
                     </p>
                     <label class="modal-form-masseng-question">
-                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                        <input type="checkbox" name="soc-checkbox" value="Telegram">Telegram
                     </label>
                     <label class="modal-form-masseng-question">
-                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                        <input type="checkbox" name="soc-checkbox" value="Viber">Viber
                     </label>
-                    <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                    <label class="modal-form-masseng-question">
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp">WhatsApp
                     </label>
 
                 </div>
@@ -291,15 +302,15 @@
                     <label class="modal-label-question" for="question"></label>
                     <div class="modal-label-container-question">
                         <textarea class="modal-input-question" id="question" name="question" rows="5"
-                            placeholder="Напишіть тут Ваше запитання">
-                            </textarea>
+                            placeholder="Напишіть тут Ваше запитання"></textarea>
                     </div>
                 </div>
 
                 <div class="modal-form-checkbox-question">
                     <input class="visually-hidden modal-form-checkbox-input-question" type="checkbox" id="user-privacyQ"
-                        name="user-privacy" value="true" required />
-                    <label class="label-checkbox-question" for="user-privacy">
+                        name="user-privacy" value="true" required>
+                    <label class="label-checkbox-question" for="user-privacyQ">
+
                         <span class="checkbox-text-question">Я даю згоду на обробку моїх персональних даних
                         </span>
                     </label>
@@ -310,9 +321,7 @@
         </div>
 
     </div>
-
     <script src="./js/script.js"></script>
-
 </body>
 
 </html>

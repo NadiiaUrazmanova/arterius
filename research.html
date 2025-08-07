@@ -26,7 +26,7 @@
             <div class="logo">
                 <a href="index.html" class="logo-link">
                     <svg class="header-logo-svg">
-                        <use href="./icons/icons.svg#icon-logo" alt="Arterius Logo" width="120" height="20">
+                        <use href="./icons/icons.svg#icon-logo">
                         </use>
                     </svg>
                     <span class="header-logo-span">медичний центр</span>
@@ -35,9 +35,10 @@
 
             <address class="header-item">
                 <svg class="header-item-svg geo-svg">
-                    <use href="./icons/icons.svg#icon-map" alt="geolocation" width="20" height="20">
+                    <use href="./icons/icons.svg#icon-map">
                     </use>
                 </svg>
+
                 <a class="header-ad-link" href="#map" id="openMapModal">
                     <span class="header-ad-span">адреса:</span>
                     <span class="header-ad-span">м.Одеса,</span> <span class="header-ad-span">вул. П.Зеленого</span>
@@ -47,11 +48,11 @@
         </div>
         <nav class="container header-nav">
             <button class="burger-button" aria-label="Меню">
-                <div class="burger-lines">
+                <span class="burger-lines">
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
-                </div>
+                </span>
                 <span class="burger-arrow">&larr; меню</span>
             </button>
             <div class="header-nav-wrapper">
@@ -68,9 +69,11 @@
                     </li>
                 </ul>
             </div>
+
             <button id="openModal" class="header-nav-button" type="button">Записатись</button>
         </nav>
     </header>
+
 
     <main>
         <section class="research">
@@ -79,19 +82,19 @@
                 <ul class="section-research-list">
                     <li class="section-research-item">
                         <div class="section-research-content">
-                            <p>УЗД голови (НСГ, доплер, дуплекс)</p>
+                            <p>УЗД голови (НСГ)</p>
                             <p>Вартість - 500грн.</p>
                         </div>
                         <div class="section-research-item-text">
                             <p class="section-research-item-name">УЗД голови (НСГ, доплер, дуплекс)</p>
                             <div class="section-research-block">
-                                <img class="section-research-photo zoomable" src="./img/nsg.jpg"
-                                    alt="neurosonography" />
+                                <img class="section-research-photo zoomable" src="./img/nsg.jpg" alt="neurosonography">
                                 <p class="section-research-paragraph">НСГ – нейросонографія дітям до 1-2 років.
                                     Показання до застосування НСГ
-                                    Діти після пологового будинку. При виникненні зауважень
+                                    Діти після пологового будинку. </p>
+                                <p>При виникненні зауважень
                                     під час вагітності та пологів
-                                    (природним шляхом або плановим шляхом кесаревого розтину) Перевірка перед
+                                    (природним шляхом або плановим шляхом кесаревого розтину). Перевірка перед
                                     вакцинацією.
                                     Контроль за розвитком і
                                     дозріванням дитини до 2 років. Якщо є скарги, поганий сон. Відрижка їжею, травми
@@ -110,58 +113,31 @@
                         </div>
                     </li>
 
-                    <!-- <li class="section-research-item"></li>
-                    <div class="section-research-content">
-                        <p>УЗД слинних залоз</p>
-                        <p>Вартість - 500грн.</p>
-                    </div>
-                    <div class="section-research-item-text">
-                        <p class="section-research-item-name">УЗД слинних залоз</p>
-                        <div class="section-research-block">
-                            <img class="section-research-photo zoomable" src="./img/uzi_slun.jpg"
-                                alt="ultrasound-salivary-glands" />
-                            <p class="section-research-paragraph">
-                                ТУС – транскраніальне ультразвукове дослідження до 16 років.
-                                Доплер - визначення швидкості кровотоку в кровоносних судинах у дітей і дорослих,
-                                показання доплера.
-                                Дуплекс - визначення властивостей кровотоку і візуалізація судин в 3d-режимі. Для
-                                дітей
-                                та дорослих. Показання до
-                                дуплексу: тремтіння ручек, судоми тіла, втрата свідомості.
-                            </p>
+                    <li class="section-research-item">
+                        <div class="section-research-content">
+                            <p>Доплер, дуплекс</p>
+                            <p>Вартість - 500грн.</p>
                         </div>
-                    </div>
-                    </li> -->
-                    <!-- <li class="section-research-item"></li>
-                                        <div class="section-research-content">
-                                            <p>УЗД слинних залоз</p>
-                                            <p>Вартість - 500грн.</p>
-                                        </div>
-                                        <div class="section-research-item-text">
-                                            <p class="section-research-item-name">УЗД слинних залоз</p>
-                                            <div class="section-research-block">
-                                                <img class="section-research-photo zoomable" src="./img/uzi_slun.jpg"
-                                                    alt="ultrasound-salivary-glands" />
-                                                <p class="section-research-paragraph">
-                                                </p>
-                                            </div>
-                                        </div>
-                                        </li> -->
-                    <!-- <li class="section-research-item"></li>
-                    <div class="section-research-content">
-                        <p>УЗД слинних залоз</p>
-                        <p>Вартість - 500грн.</p>
-                    </div>
-                    <div class="section-research-item-text">
-                        <p class="section-research-item-name">УЗД слинних залоз</p>
-                        <div class="section-research-block">
-                            <img class="section-research-photo zoomable" src="./img/uzi_slun.jpg"
-                                alt="ultrasound-salivary-glands" />
-                            <p class="section-research-paragraph">
-                            </p>
+                        <div class="section-research-item-text">
+                            <p class="section-research-item-name">Доплер, дуплекс</p>
+                            <div class="section-research-block">
+                                <img class="section-research-photo zoomable" src="./img/dopler-ukr.jpg"
+                                    alt="ultrasound-dopler">
+                                <p class="section-research-paragraph">
+                                    Доплер - визначення швидкості кровотоку в кровоносних судинах у дітей і дорослих,
+                                    показання доплера.
+                                </p>
+                                <p>
+                                    Дуплекс - визначення властивостей кровотоку і візуалізація судин в 3d-режимі. Для
+                                    дітей
+                                    та дорослих. Показання до
+                                    дуплексу: тремтіння ручек, судоми тіла, втрата свідомості.
+                                </p>
+
+                            </div>
                         </div>
-                    </div>
-                    </li> -->
+                    </li>
+
 
 
                     <li class="section-research-item">
@@ -173,7 +149,7 @@
                             <p class="section-research-item-name">УЗД слинних залоз</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo zoomable" src="./img/uzi_slun.jpg"
-                                    alt="ultrasound-salivary-glands" />
+                                    alt="ultrasound-salivary-glands">
                                 <p class="section-research-paragraph">Показання: при виникненні болю, набряклості
                                     слинних
                                     залоз.
@@ -191,7 +167,7 @@
                             <p class="section-research-item-name">УЗД вилочкової залози</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo zoomable" src="./img/uzi-vilochka.jpg"
-                                    alt="thymus gland" />
+                                    alt="thymus gland">
                                 <p class="section-research-paragraph">Показання: при ослабленні імунитету.
                                     Часті простудні захворювання. Біль у грудях при кашлі.
                                 </p>
@@ -207,9 +183,12 @@
                             <p class="section-research-item-name">УЗД щитовидної залози</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo zoomable" src="./img/uzi-shitovidka-ukr.jpg"
-                                    alt="ultrasound-thyroid-gland" />
+                                    alt="ultrasound-thyroid-gland">
                                 <p class="section-research-paragraph">Показання: при болях, першіння в горлі, кашлі
-                                    Збільшення області щитовидної залози. Спадкова схильність
+                                    Збільшення області щитовидної залози.
+                                </p>
+                                <p>
+                                    Спадкова схильність
                                     Перенесена вірусна інфекція.
                                 </p>
                             </div>
@@ -224,7 +203,7 @@
                             <p class="section-research-item-name">УЗД серця</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo  zoomable" src="./img/uzi-kard-ukr.jpg"
-                                    alt="ultrasound-heart" />
+                                    alt="ultrasound-heart">
                                 <p class="section-research-paragraph">Показання: при болі, дискомфорту в області серця.
                                     При
                                     тахікардії, паніці, страху.
@@ -242,7 +221,7 @@
                             <p class="section-research-item-name">УЗД черевної порожнини</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo  zoomable" src="./img/uzi-bruh-ukr.jpg"
-                                    alt="ultrasound-abdomen" />
+                                    alt="ultrasound-abdomen">
                                 <p class="section-research-paragraph">Показання: при болях в животі, нудоті, блювоті,
                                     -печії. При
                                     наявності каменя у жовчному міхурі, підозрі на апендицит.
@@ -259,10 +238,13 @@
                         <div class="section-research-item-text">
                             <p class="section-research-item-name">УЗД нирок, доплер нирок</p>
                             <div class="section-research-block">
-                                <img class="section-research-photo  zoomable" src="./img/uzi-nyrky.jpg" alt="kidneys" />
+                                <img class="section-research-photo  zoomable" src="./img/uzi-nyrky.jpg" alt="kidneys">
                                 <p class="section-research-paragraph">Показання: при болях в спині, перенесеній застуді
                                     з
-                                    температурою напередодні. При виявленні потемнінні сечі, крові в сечі. При
+                                    температурою напередодні.
+                                </p>
+                                <p>
+                                    При виявленні потемнінні сечі, крові в сечі. При
                                     спрадковій
                                     схильності, наприклад, при сечокам'яній хворобі. </p>
                             </div>
@@ -277,7 +259,7 @@
                             <p class="section-research-item-name">УЗД сечового міхура</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo  zoomable" src="./img/uzi-mochevoy-ukr.jpg"
-                                    alt="ultrasound-bladder" />
+                                    alt="ultrasound-bladder">
                                 <p class="section-research-paragraph">Показання: при болях внизу живота, перенесеній
                                     застуді
                                     з
@@ -297,7 +279,7 @@
                             <p class="section-research-item-name">УЗД передміхурової залози</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo  zoomable" src="./img/uzi-predstat.jpg"
-                                    alt="ultrasound-prostate" />
+                                    alt="ultrasound-prostate">
                                 <p class="section-research-paragraph">Показання: при утрудненні сечовипускання,
                                     почастішанні
                                     сечовипускання, болях при сечовипусканні.
@@ -315,7 +297,7 @@
                             <p class="section-research-item-name">УЗД мошонки</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo  zoomable" src="./img/uzi-moshonka.jpg"
-                                    alt="scrotum" />
+                                    alt="scrotum">
                                 <p class="section-research-paragraph">Показання: при болі, набряку, почервонінні в
                                     області мошонки, при зміні в розмірі яєчок, проблемах з ерекцією. В період
                                     статевого дозрівання</p>
@@ -331,7 +313,7 @@
                             <p class="section-research-item-name">УЗД м'яких тканин (голови, рук, ніг, тіла)</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo  zoomable" src="./img/uzi-miaki-tkanyny.jpg"
-                                    alt="soft-tissues" />
+                                    alt="soft-tissues">
                                 <p class="section-research-paragraph">Показання: при травмах, набряках, ущільненні,
                                     запаленні, підозрі на пухлини, а також для контролю після операцій</p>
                             </div>
@@ -346,9 +328,12 @@
                             <p class="section-research-item-name">УЗД колінного суглоба</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo  zoomable" src="./img/uzi-kolino-ukr.jpg"
-                                    alt="knee-joint" />
+                                    alt="knee-joint">
                                 <p class="section-research-paragraph">Показання: при травмах, запальних процесах,
-                                    дегенеративних змінах, а також для моніторингу лікування та оцінки стану суглоба
+                                    дегенеративних змінах.
+                                </p>
+                                <p>
+                                    Для моніторингу лікування та оцінки стану суглоба
                                     після операцій. При болі, набряку, обмеженні рухів, хрускоті або клацанні в суглобі,
                                     артрит або артроз.</p>
                             </div>
@@ -364,9 +349,12 @@
                                 верхніх кінцівок</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo  zoomable" src="./img/uzi-verhni-kincivky.jpg"
-                                    alt="upper-extremities" />
+                                    alt="upper-extremities">
                                 <p class="section-research-paragraph">Показання: при набряках, болі, онімінні, судомах,
-                                    відчутті важкості в руках, а також при підозрі на варикозне розширення вен,
+                                    відчутті важкості в руках.
+                                </p>
+                                <p>
+                                    При підозрі на варикозне розширення вен,
                                     тромбозі,
                                     атеросклерозі, або після травм та операцій на судинах</p>
                             </div>
@@ -382,13 +370,15 @@
                                 кінцівок</p>
                             <div class="section-research-block">
                                 <img class="section-research-photo  zoomable" src="./img/uzi-nyjnikincivky.jpg"
-                                    alt="lower-extremities" />
-                                <p class="section-research-paragraph">Показання: при болі у ногах, набряках, відчутті
-                                    важкості, онімінні, поколюванні, судомах, зміні кольору шкіри, видимих розширених
-                                    венах,
-                                    відчутті холоду, кульгавості при ходьбі, при наявності виразок, трофічних
-                                    змін на шкірі. Пацієнтам з цукровим діабетом, гіпертонією, після
-                                    перенесених інфарктів, інсультів, оперативних втручань на судинах.</p>
+                                    alt="lower-extremities">
+                                <p class="section-research-paragraph">Показання: біль у ногах, набряки, важкість,
+                                    оніміння, поколювання, судоми, зміна кольору шкіри.
+                                </p>
+                                <p>
+                                    Видимі варикозні вени, відчуття
+                                    холоду, кульгавість, виразки, трофічні зміни. При цукровому діабеті, гіпертонії,
+                                    після інфарктів, інсультів,
+                                    операцій на судинах.</p>
                             </div>
                         </div>
                     </li>
@@ -414,12 +404,20 @@
                         <li><a class="footer-tel-link" href="tel:+380669634017">(066) 963-40-17</a></li>
                     </ul>
                 </div>
+                <div class="footer-payment">
+                    <span>Доступні способи оплати:</span>
+                    <span>готівка,</span>
+                    <span>банківський переказ</span>
+                    <span> платіжний чек.</span>
+                </div>
                 <div class="footer-shedule"><span class="footer-span">графік роботи</span>
                     <span>9:00 - 16:00 щодня</span>
                     <span>неділя вихідний</span>
                 </div>
             </div>
-            <span>Наказ МОЗ України від 25.03.2024 № 502 "Про ліцензування медичної практики"</span>
+            <span class="footer-moz">Наказ МОЗ України від 25.03.2024 № 502 "Про ліцензування медичної практики"</span>
+
+
         </div>
 
     </footer>
@@ -459,7 +457,7 @@
                 <div class="modal-form-list">
                     <label class="modal-label" for="user-name">Прізвище та ім'я</label>
                     <div class="modal-label-container">
-                        <input class="modal-input" id="user-name" type="text" name="user-name" required />
+                        <input class="modal-input" id="user-name" type="text" name="user-name" required>
                         <svg class="modal-label-icon" width="18" height="24">
                             <use href="./icons/icons.svg#icon-person">
                             </use>
@@ -469,7 +467,7 @@
                 <div class="modal-form-list">
                     <label class="modal-label" for="phone">Номер телефону (у форматі 380__-___-__-__)</label>
                     <div class="modal-label-container">
-                        <input class="modal-input modal-input-phone" id="phone" type="tel" name="phone" required />
+                        <input class="modal-input modal-input-phone" id="phone" type="tel" name="phone" required>
                         <svg class="modal-label-icon" width="18" height="24">
                             <use href="./icons/icons.svg#icon-phone"></use>
                         </svg>
@@ -478,21 +476,20 @@
                 <div class="modal-form-soc-checkbox">
                     <p class="modal-form-choose-masseng">Оберіть, яким месенджером Вам зручніше користуватись</p>
                     <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                        <input type="checkbox" name="soc-checkbox" value="Telegram">Telegram
                     </label>
                     <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                        <input type="checkbox" name="soc-checkbox" value="Viber">Viber
                     </label>
                     <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp">WhatsApp
                     </label>
 
                 </div>
                 <div class="modal-form-checkbox">
                     <input class="visually-hidden modal-form-checkbox-input" type="checkbox" id="user-privacy"
-                        name="user-privacy" value="true" required />
+                        name="user-privacy" value="true" required>
                     <label class="label-checkbox" for="user-privacy">
-
                         <span class="checkbox-text">Я даю згоду на обробку моїх персональних даних
                         </span>
                     </label>
@@ -527,7 +524,7 @@
                 <div class="modal-form-list-question">
                     <label class="modal-label-question" for="user-nameQ">Прізвище та ім'я</label>
                     <div class="modal-label-container-question">
-                        <input class="modal-input-question" id="user-nameQ" type="text" name="user-name" required />
+                        <input class="modal-input" id="user-nameQ" type="text" name="user-name" required>
                         <svg class="modal-label-icon-question" width="18" height="24">
                             <use href="./icons/icons.svg#icon-person">
                             </use>
@@ -539,23 +536,23 @@
                     <label class="modal-label-question" for="phone">Номер телефону (у форматі 380__-___-__-__)</label>
                     <div class="modal-label-container-question">
                         <input class="modal-input modal-input-phone-question" id="phoneQ" type="tel" name="phone"
-                            required />
+                            required>
                         <svg class="modal-label-icon-question" width="18" height="24">
                             <use href="./icons/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="modal-form-soc-checkbox-question">
+                <div class="modal-form-soc-checkbox">
                     <p class="modal-form-choose-masseng-question">Оберіть, яким месенджером Вам зручніше користуватись
                     </p>
                     <label class="modal-form-masseng-question">
-                        <input type="checkbox" name="soc-checkbox" value="Telegram" checked />Telegram
+                        <input type="checkbox" name="soc-checkbox" value="Telegram">Telegram
                     </label>
                     <label class="modal-form-masseng-question">
-                        <input type="checkbox" name="soc-checkbox" value="Viber" />Viber
+                        <input type="checkbox" name="soc-checkbox" value="Viber">Viber
                     </label>
-                    <label class="modal-form-masseng">
-                        <input type="checkbox" name="soc-checkbox" value="WhatsApp" />WhatsApp
+                    <label class="modal-form-masseng-question">
+                        <input type="checkbox" name="soc-checkbox" value="WhatsApp">WhatsApp
                     </label>
 
                 </div>
@@ -564,15 +561,14 @@
                     <label class="modal-label-question" for="question"></label>
                     <div class="modal-label-container-question">
                         <textarea class="modal-input-question" id="question" name="question" rows="5"
-                            placeholder="Напишіть тут Ваше запитання">
-                            </textarea>
+                            placeholder="Напишіть тут Ваше запитання"></textarea>
                     </div>
                 </div>
 
                 <div class="modal-form-checkbox-question">
                     <input class="visually-hidden modal-form-checkbox-input-question" type="checkbox" id="user-privacyQ"
-                        name="user-privacy" value="true" required />
-                    <label class="label-checkbox-question" for="user-privacy">
+                        name="user-privacy" value="true" required>
+                    <label class="label-checkbox-question" for="user-privacyQ">
 
                         <span class="checkbox-text-question">Я даю згоду на обробку моїх персональних даних
                         </span>
@@ -584,12 +580,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
     <script src="./js/script.js"></script>
 </body>
 

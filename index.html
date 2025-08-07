@@ -74,7 +74,10 @@
         </nav>
     </header>
 
+    <div id="customAlert"></div>
+
     <main>
+
         <section class="first-page">
             <div class="container">
                 <div class="first-page-heading-container">
@@ -170,14 +173,8 @@
                 </div>
             </div>
 
-            </div>
+
         </section>
-
-        <!-- <section class="news">
-            <div class="container">
-
-
-        </section> -->
 
     </main>
 
@@ -306,10 +303,10 @@
                 </span>
             </div>
             <p class="modal-form-legend-question">Задайте Ваше запитання</p>
-            <form class="modal-form-question" id="formQ" name="user-form-question">
+            <form class="modal-form-question" id="gformQ" name="user-form-question">
 
                 <div class="modal-form-list-question">
-                    <label class="modal-label-question" for="user-nameQ">Прізвище та ім'я</label>
+                    <label class="modal-label-question" for="user-name">Прізвище та ім'я</label>
                     <div class="modal-label-container-question">
                         <input class="modal-input" id="user-nameQ" type="text" name="user-name" required>
                         <svg class="modal-label-icon-question" width="18" height="24">
@@ -347,8 +344,8 @@
                 <div class="modal-form-list-question">
                     <label class="modal-label-question" for="question"></label>
                     <div class="modal-label-container-question">
-                        <textarea class="modal-input-question" id="question" name="question" rows="5"
-                            placeholder="Напишіть тут Ваше запитання"></textarea>
+                        <textarea class="modal-input-question" id="questionQ" name="question" rows="5"
+                            placeholder="Напишіть тут Ваше запитання" required></textarea>
                     </div>
                 </div>
 
