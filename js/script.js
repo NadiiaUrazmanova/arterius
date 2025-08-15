@@ -72,7 +72,7 @@ document.getElementById("gform").addEventListener("submit", function (e) {
   }
   formData.set("phone", cleanedPhone);
 
-  fetch("https://script.google.com/macros/s/AKfycbyZpdRC9_YJ5cq0Qm47gnfAGHToUDLgVcGNMaTiyh-fuQ9XkAIQtpZdfr3jmIypjk7Q/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbxl-Wqn0IbEH3vE09Fsk32t6T4kb46zQCkjynsPMxEtSHqUuIjje3mUuCTOT3oNyHHbeg/exec", {
     method: "POST",
     body: formData
   })
@@ -107,7 +107,7 @@ document.getElementById("gformQ").addEventListener("submit", function (e) {
   }
   formDataQ.set("phone", cleanedPhoneQ);
 
-  fetch("https://script.google.com/macros/s/AKfycbyZpdRC9_YJ5cq0Qm47gnfAGHToUDLgVcGNMaTiyh-fuQ9XkAIQtpZdfr3jmIypjk7Q/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbxl-Wqn0IbEH3vE09Fsk32t6T4kb46zQCkjynsPMxEtSHqUuIjje3mUuCTOT3oNyHHbeg/exec", {
     method: "POST",
     body: formDataQ
   })
